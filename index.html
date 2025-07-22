@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><i class="fas fa-cricket"></i> Cricket Simulator</h1>
+            <p>Simulate T20s, Tests, ODIs, and now host tournaments!</p>
+        </header>
+
+        <div class="tab-bar">
+            <button class="tab-btn active" id="single-tab" onclick="showPanel('single')">Single Match</button>
+            <button class="tab-btn" id="tournament-tab" onclick="showPanel('tournament')">Tournament</button>
+        </div>
+
+        <div id="single-panel" class="main-content">
+            <!-- Match Setup Section -->
+            <section class="match-setup">
+                <h2>Match Setup</h2>
+                <div class="setup-grid">
+                    <div class="team-selection">
+                        <h3>Team Selection</h3>
+                        <div class="team-selector">
+                            <label for="team1">Team 1:</label>
+                            <select id="team1" onchange="loadTeam(1)">
+                                <option value="">Select Team</option>
+                                <optgroup label="International Teams">
+                                    <option value="india">India</option>
+                                    <option value="australia">Australia</option>
+                                    <option value="england">England</option>
+                                    <option value="southafrica">South Africa</option>
+                                    <option value="newzealand">New Zealand</option>
+                                    <option value="pakistan">Pakistan</option>
+                                    <option value="srilanka">Sri Lanka</option>
+                                    <option value="bangladesh">Bangladesh</option>
+                                </optgroup>
+                                <optgroup label="IPL Teams">
+                                    <option value="rcb">Royal Challengers Bangalore</option>
+                                    <option value="csk">Chennai Super Kings</option>
+                                    <option value="mi">Mumbai Indians</option>
+                                    <option value="gt">Gujarat Titans</option>
+                                    <option value="lsg">Lucknow Super Giants</option>
+                                    <option value="dc">Dehli Capitals</option>
+                                    <option value="srh">Sunrisers Hyderabad</option>
+                                    <option value="pbks">Punjab Kings</option>
+                                    <option value="rr">Rajasthan Royals</option>
+                                    <option value="kkr">Kolkata Knight Riders</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="team-selector">
+                            <label for="team2">Team 2:</label>
+                            <select id="team2" onchange="loadTeam(2)">
+                                <option value="">Select Team</option>
+                                <optgroup label="International Teams">
+                                    <option value="india">India</option>
+                                    <option value="australia">Australia</option>
+                                    <option value="england">England</option>
+                                    <option value="southafrica">South Africa</option>
+                                    <option value="newzealand">New Zealand</option>
+                                    <option value="pakistan">Pakistan</option>
+                                    <option value="srilanka">Sri Lanka</option>
+                                    <option value="bangladesh">Bangladesh</option>
+                                </optgroup>
+                                <optgroup label="IPL Teams">
+                                    <option value="rcb">Royal Challengers Bangalore</option>
+                                    <option value="csk">Chennai Super Kings</option>
+                                    <option value="mi">Mumbai Indians</option>
+                                    <option value="gt">Gujarat Titans</option>
+                                    <option value="lsg">Lucknow Super Giants</option>
+                                    <option value="dc">Dehli Capitals</option>
+                                    <option value="srh">Sunrisers Hyderabad</option>
+                                    <option value="pbks">Punjab Kings</option>
+                                    <option value="rr">Rajasthan Royals</option>
+                                    <option value="kkr">Kolkata Knight Riders</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="match-type">
+                        <h3>Match Type</h3>
+                        <div class="match-type-buttons">
+                            <button class="match-btn active" onclick="setMatchType('t20')">T20</button>
+                            <button class="match-btn" onclick="setMatchType('odi')">ODI</button>
+                            <button class="match-btn" onclick="setMatchType('test')">Test</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Lineup Management -->
+            <section class="lineup-management">
+                <h2>Lineup Management</h2>
+                <div class="lineup-container">
+                    <div class="team-lineup" id="team1-lineup">
+                        <h3 id="team1-name">Team 1</h3>
+                        <div class="lineup-grid">
+                            <div class="batting-order">
+                                <h4>Batting Order</h4>
+                                <div id="team1-batting"></div>
+                            </div>
+                            <div class="bowling-order">
+                                <h4>Bowling Order</h4>
+                                <div id="team1-bowling"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-lineup" id="team2-lineup">
+                        <h3 id="team2-name">Team 2</h3>
+                        <div class="lineup-grid">
+                            <div class="batting-order">
+                                <h4>Batting Order</h4>
+                                <div id="team2-batting"></div>
+                            </div>
+                            <div class="bowling-order">
+                                <h4>Bowling Order</h4>
+                                <div id="team2-bowling"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Toss Section -->
+            <!-- (Removed for automatic toss) -->
+
+            <!-- Simulation Controls -->
+            <section class="simulation-controls">
+                <button class="simulate-btn" onclick="simulateMatch()">
+                    <i class="fas fa-play"></i> Simulate Match
+                </button>
+                <button class="reset-btn" onclick="resetMatch()">
+                    <i class="fas fa-redo"></i> Reset
+                </button>
+            </section>
+
+            <!-- Match Results -->
+            <section class="match-results" id="match-results" style="display: none;">
+                <h2>Match Results</h2>
+                <div class="result-summary" id="result-summary"></div>
+                
+                <div class="scorecards">
+                    <div class="scorecard-section">
+                        <h3>Batting Scorecard</h3>
+                        <div class="scorecard-container">
+                            <div id="team1-batting-scorecard"></div>
+                            <div id="team2-batting-scorecard"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="scorecard-section">
+                        <h3>Bowling Scorecard</h3>
+                        <div class="scorecard-container">
+                            <div id="team1-bowling-scorecard"></div>
+                            <div id="team2-bowling-scorecard"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="tournament-panel" class="main-content" style="display:none;">
+            <section class="tournament-setup">
+                <h2>Tournament Setup</h2>
+                <div class="tournament-options">
+                    <label>
+                        <input type="radio" name="tournament-size" value="4" checked onchange="renderTournamentTeamSelectors()"> 4 Teams
+                    </label>
+                    <label>
+                        <input type="radio" name="tournament-size" value="8" onchange="renderTournamentTeamSelectors()"> 8 Teams
+                    </label>
+                </div>
+                <div class="tournament-format-options" style="margin-bottom:18px;">
+                    <label style="margin-right:12px;">
+                        <input type="radio" name="tournament-format" value="t20" checked> T20
+                    </label>
+                    <label style="margin-right:12px;">
+                        <input type="radio" name="tournament-format" value="odi"> ODI
+                    </label>
+                    <label>
+                        <input type="radio" name="tournament-format" value="test"> Test
+                    </label>
+                </div>
+                <div id="tournament-team-selectors"></div>
+                <button class="simulate-btn" onclick="startTournament()">Start Tournament</button>
+            </section>
+            <section id="tournament-bracket-section" style="display:none;">
+                <h2>Tournament Bracket</h2>
+                <div id="tournament-bracket"></div>
+                <div id="tournament-results"></div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
