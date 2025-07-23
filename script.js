@@ -248,278 +248,278 @@ const teams = {
     },
     // IPL TEAMS
     rcb: {
-        name: 'Royal Challengers Bengaluru',
+        name: 'Royal Challengers Bangalore',
         players: [
-            { name: 'Virat Kohli', role: 'batsman' },
-            { name: 'Rajat Patidar', role: 'batsman' },
-            { name: 'Devdutt Padikkal', role: 'batsman' },
-            { name: 'Swastik Chikara', role: 'batsman' },
-            { name: 'Phil Salt', role: 'wicketkeeper' },
-            { name: 'Jitesh Sharma', role: 'wicketkeeper' },
-            { name: 'Liam Livingstone', role: 'allrounder' },
-            { name: 'Krunal Pandya', role: 'allrounder' },
-            { name: 'Romario Shepherd', role: 'allrounder' },
-            { name: 'Tim David', role: 'allrounder' },
-            { name: 'Manoj Bhandage', role: 'allrounder' },
-            { name: 'Jacob Bethell', role: 'allrounder' },
-            { name: 'Mohit Rathee', role: 'allrounder' },
-            { name: 'Suyash Sharma', role: 'bowler' },
-            { name: 'Swapnil Singh', role: 'bowler' },
-            { name: 'Yash Dayal', role: 'bowler' },
-            { name: 'Rasikh Dar', role: 'bowler' },
-            { name: 'Josh Hazlewood', role: 'bowler' },
-            { name: 'Bhuvneshwar Kumar', role: 'bowler' },
-            { name: 'Nuwan Thushara', role: 'bowler' },
-            { name: 'Abhinandan Singh', role: 'bowler' },
-            { name: 'Lungi Ngidi', role: 'bowler' }
+            { name: 'Virat Kohli', role: 'batsman', batting: 88, bowling: 20 },
+            { name: 'Rajat Patidar', role: 'batsman', batting: 75, bowling: 10 },
+            { name: 'Devdutt Padikkal', role: 'batsman', batting: 77, bowling: 10 },
+            { name: 'Swastik Chikara', role: 'batsman', batting: 70, bowling: 8 },
+            { name: 'Phil Salt', role: 'wicketkeeper', batting: 78, bowling: 5 },
+            { name: 'Jitesh Sharma', role: 'wicketkeeper', batting: 74, bowling: 5 },
+            { name: 'Liam Livingstone', role: 'allrounder', batting: 76, bowling: 72 },
+            { name: 'Krunal Pandya', role: 'allrounder', batting: 68, bowling: 70 },
+            { name: 'Romario Shepherd', role: 'allrounder', batting: 70, bowling: 75 },
+            { name: 'Tim David', role: 'allrounder', batting: 72, bowling: 65 },
+            { name: 'Manoj Bhandage', role: 'allrounder', batting: 65, bowling: 62 },
+            { name: 'Jacob Bethell', role: 'allrounder', batting: 66, bowling: 60 },
+            { name: 'Mohit Rathee', role: 'allrounder', batting: 62, bowling: 60 },
+            { name: 'Suyash Sharma', role: 'bowler', batting: 10, bowling: 75 },
+            { name: 'Swapnil Singh', role: 'bowler', batting: 12, bowling: 72 },
+            { name: 'Yash Dayal', role: 'bowler', batting: 8, bowling: 74 },
+            { name: 'Rasikh Dar', role: 'bowler', batting: 7, bowling: 73 },
+            { name: 'Josh Hazlewood', role: 'bowler', batting: 20, bowling: 85 },
+            { name: 'Bhuvneshwar Kumar', role: 'bowler', batting: 18, bowling: 80 },
+            { name: 'Nuwan Thushara', role: 'bowler', batting: 9, bowling: 77 },
+            { name: 'Abhinandan Singh', role: 'bowler', batting: 6, bowling: 70 },
+            { name: 'Lungi Ngidi', role: 'bowler', batting: 15, bowling: 83 }
         ]
     },
     csk: {
         name: 'Chennai Super Kings',
         players: [
-            { name: 'Ruturaj Gaikwad', role: 'batsman', captain: true },
-            { name: 'Rahul Tripathi', role: 'batsman' },
-            { name: 'Devon Conway', role: 'wicketkeeper' },
-            { name: 'Matheesha Pathirana', role: 'bowler' },
-            { name: 'Noor Ahmad', role: 'bowler' },
-            { name: 'Khaleel Ahmed', role: 'bowler' },
-            { name: 'MS Dhoni', role: 'wicketkeeper' },
-            { name: 'Shivam Dube', role: 'allrounder' },
-            { name: 'Ravindra Jadeja', role: 'allrounder' },
-            { name: 'Vijay Shankar', role: 'allrounder' },
-            { name: 'Rachin Ravindra', role: 'allrounder' },
-            { name: 'Ravichandran Ashwin', role: 'allrounder' },
-            { name: 'Sam Curran', role: 'allrounder' },
-            { name: 'Shaik Rasheed', role: 'batsman' },
-            { name: 'Anshul Kamboj', role: 'allrounder' },
-            { name: 'Mukesh Choudhary', role: 'bowler' },
-            { name: 'Deepak Hooda', role: 'allrounder' },
-            { name: 'Jamie Overton', role: 'allrounder' },
-            { name: 'Gurjapneet Singh', role: 'bowler' },
-            { name: 'Nathan Ellis', role: 'bowler' },
-            { name: 'Kamlesh Nagarkoti', role: 'bowler' },
-            { name: 'Vansh Bedi', role: 'wicketkeeper' },
-            { name: 'Andre Siddarth', role: 'batsman' },
-            { name: 'Shreyas Gopal', role: 'bowler' }
+            { name: 'Ruturaj Gaikwad', role: 'batsman', batting: 80, bowling: 10, captain: true },
+            { name: 'Rahul Tripathi', role: 'batsman', batting: 74, bowling: 10 },
+            { name: 'Devon Conway', role: 'wicketkeeper', batting: 81, bowling: 5 },
+            { name: 'Matheesha Pathirana', role: 'bowler', batting: 8, bowling: 78 },
+            { name: 'Noor Ahmad', role: 'bowler', batting: 10, bowling: 75 },
+            { name: 'Khaleel Ahmed', role: 'bowler', batting: 12, bowling: 74 },
+            { name: 'MS Dhoni', role: 'wicketkeeper', batting: 78, bowling: 5 },
+            { name: 'Shivam Dube', role: 'allrounder', batting: 72, bowling: 68 },
+            { name: 'Ravindra Jadeja', role: 'allrounder', batting: 70, bowling: 82 },
+            { name: 'Vijay Shankar', role: 'allrounder', batting: 68, bowling: 65 },
+            { name: 'Rachin Ravindra', role: 'allrounder', batting: 69, bowling: 75 },
+            { name: 'Ravichandran Ashwin', role: 'allrounder', batting: 65, bowling: 80 },
+            { name: 'Sam Curran', role: 'allrounder', batting: 68, bowling: 75 },
+            { name: 'Shaik Rasheed', role: 'batsman', batting: 70, bowling: 8 },
+            { name: 'Anshul Kamboj', role: 'allrounder', batting: 62, bowling: 60 },
+            { name: 'Mukesh Choudhary', role: 'bowler', batting: 7, bowling: 72 },
+            { name: 'Deepak Hooda', role: 'allrounder', batting: 66, bowling: 65 },
+            { name: 'Gurjapneet Singh', role: 'bowler', batting: 6, bowling: 70 },
+            { name: 'Jamie Overton', role: 'allrounder', batting: 65, bowling: 68 },
+            { name: 'Kamlesh Nagarkoti', role: 'bowler', batting: 8, bowling: 72 },
+            { name: 'Nathan Ellis', role: 'bowler', batting: 10, bowling: 74 },
+            { name: 'Vansh Bedi', role: 'wicketkeeper', batting: 65, bowling: 5 },
+            { name: 'Andre Siddarth', role: 'batsman', batting: 70, bowling: 8 },
+            { name: 'Shreyas Gopal', role: 'bowler', batting: 12, bowling: 72 }
         ]
     },
     mi: {
         name: 'Mumbai Indians',
         players: [
-            { name: 'Hardik Pandya', role: 'allrounder', captain: true },
-            { name: 'Rohit Sharma', role: 'batsman' },
-            { name: 'Jasprit Bumrah', role: 'bowler' },
-            { name: 'Suryakumar Yadav', role: 'batsman' },
-            { name: 'Tilak Varma', role: 'allrounder' },
-            { name: 'Trent Boult', role: 'bowler' },
-            { name: 'Karn Sharma', role: 'bowler' },
-            { name: 'Robin Minz', role: 'wicketkeeper' },
-            { name: 'Naman Dhir', role: 'allrounder' },
-            { name: 'Ryan Rickelton', role: 'wicketkeeper' },
-            { name: 'Deepak Chahar', role: 'bowler' },
-            { name: 'Allah Ghazanfar', role: 'bowler' },
-            { name: 'Will Jacks', role: 'batsman' },
-            { name: 'Ashwani Kumar', role: 'bowler' },
-            { name: 'Reece Topley', role: 'bowler' },
-            { name: 'Krishnan Shrijith', role: 'wicketkeeper' },
-            { name: 'Mitchell Santner', role: 'allrounder' },
-            { name: 'Raj Bawa', role: 'allrounder' },
-            { name: 'Satyanarayana Raju', role: 'bowler' },
-            { name: 'Bevon Jacobs', role: 'batsman' },
-            { name: 'Arjun Tendulkar', role: 'bowler' },
-            { name: 'Vignesh Puthur', role: 'allrounder' },
-            { name: 'Lizaad Williams', role: 'bowler' }
+            { name: 'Hardik Pandya', role: 'allrounder', batting: 75, bowling: 78, captain: true },
+            { name: 'Rohit Sharma', role: 'batsman', batting: 85, bowling: 20 },
+            { name: 'Jasprit Bumrah', role: 'bowler', batting: 25, bowling: 90 },
+            { name: 'Suryakumar Yadav', role: 'batsman', batting: 83, bowling: 25 },
+            { name: 'Tilak Varma', role: 'batsman', batting: 76, bowling: 10 },
+            { name: 'Trent Boult', role: 'bowler', batting: 20, bowling: 86 },
+            { name: 'Karn Sharma', role: 'bowler', batting: 12, bowling: 74 },
+            { name: 'Robin Minz', role: 'wicketkeeper', batting: 70, bowling: 5 },
+            { name: 'Naman Dhir', role: 'allrounder', batting: 65, bowling: 65 },
+            { name: 'Ryan Rickelton', role: 'wicketkeeper', batting: 72, bowling: 5 },
+            { name: 'Deepak Chahar', role: 'bowler', batting: 15, bowling: 80 },
+            { name: 'Allah Ghazanfar', role: 'bowler', batting: 8, bowling: 70 },
+            { name: 'Will Jacks', role: 'batsman', batting: 74, bowling: 15 },
+            { name: 'Ashwani Kumar', role: 'bowler', batting: 7, bowling: 70 },
+            { name: 'Reece Topley', role: 'bowler', batting: 8, bowling: 79 },
+            { name: 'Krishnan Shrijith', role: 'wicketkeeper', batting: 68, bowling: 5 },
+            { name: 'Mitchell Santner', role: 'allrounder', batting: 68, bowling: 80 },
+            { name: 'Raj Bawa', role: 'allrounder', batting: 66, bowling: 65 },
+            { name: 'Satyanarayana Raju', role: 'bowler', batting: 6, bowling: 70 },
+            { name: 'Bevon Jacobs', role: 'batsman', batting: 70, bowling: 8 },
+            { name: 'Arjun Tendulkar', role: 'bowler', batting: 10, bowling: 72 },
+            { name: 'Vignesh Puthur', role: 'allrounder', batting: 62, bowling: 60 },
+            { name: 'Lizaad Williams', role: 'bowler', batting: 8, bowling: 80 }
         ]
     },
     gt: {
         name: 'Gujarat Titans',
         players: [
-            { name: 'Jos Buttler', role: 'wicketkeeper' },
-            { name: 'Kumar Kushagra', role: 'wicketkeeper' },
-            { name: 'Anuj Rawat', role: 'wicketkeeper' },
-            { name: 'Shubman Gill', role: 'batsman', captain: true },
-            { name: 'Sai Sudharsan', role: 'batsman' },
-            { name: 'Shahrukh Khan', role: 'batsman' },
-            { name: 'Sai Kishore', role: 'batsman' },
-            { name: 'Mahipal Lomror', role: 'allrounder' },
-            { name: 'Washington Sundar', role: 'allrounder' },
-            { name: 'Nishant Sindhu', role: 'allrounder' },
-            { name: 'Rashid Khan', role: 'allrounder' },
-            { name: 'Rahul Tewatia', role: 'allrounder' },
-            { name: 'Karim Janat', role: 'allrounder' },
-            { name: 'Kagiso Rabada', role: 'bowler' },
-            { name: 'Mohammed Siraj', role: 'bowler' },
-            { name: 'Prasidh Krishna', role: 'bowler' },
-            { name: 'Gerald Coetzee', role: 'bowler' },
-            { name: 'Arshad Khan', role: 'bowler' },
-            { name: 'Ishant Sharma', role: 'bowler' },
-            { name: 'Gurnoor Brar', role: 'bowler' },
-            { name: 'Kulwant Khejroliya', role: 'bowler' },
-            { name: 'Manav Suthar', role: 'bowler' }
+            { name: 'Jos Buttler', role: 'wicketkeeper', batting: 85, bowling: 5 },
+            { name: 'Kumar Kushagra', role: 'wicketkeeper', batting: 70, bowling: 5 },
+            { name: 'Anuj Rawat', role: 'wicketkeeper', batting: 70, bowling: 5 },
+            { name: 'Shubman Gill', role: 'batsman', batting: 80, bowling: 10, captain: true },
+            { name: 'Sai Sudharsan', role: 'batsman', batting: 75, bowling: 10 },
+            { name: 'Shahrukh Khan', role: 'batsman', batting: 72, bowling: 8 },
+            { name: 'Sai Kishore', role: 'batsman', batting: 70, bowling: 8 },
+            { name: 'Mahipal Lomror', role: 'allrounder', batting: 68, bowling: 65 },
+            { name: 'Washington Sundar', role: 'allrounder', batting: 68, bowling: 75 },
+            { name: 'Nishant Sindhu', role: 'allrounder', batting: 65, bowling: 62 },
+            { name: 'Rashid Khan', role: 'allrounder', batting: 70, bowling: 85 },
+            { name: 'Rahul Tewatia', role: 'allrounder', batting: 66, bowling: 65 },
+            { name: 'Karim Janat', role: 'allrounder', batting: 65, bowling: 65 },
+            { name: 'Kagiso Rabada', role: 'bowler', batting: 25, bowling: 87 },
+            { name: 'Mohammed Siraj', role: 'bowler', batting: 15, bowling: 82 },
+            { name: 'Prasidh Krishna', role: 'bowler', batting: 5, bowling: 84 },
+            { name: 'Gerald Coetzee', role: 'bowler', batting: 8, bowling: 80 },
+            { name: 'Arshad Khan', role: 'bowler', batting: 8, bowling: 75 },
+            { name: 'Ishant Sharma', role: 'bowler', batting: 10, bowling: 78 },
+            { name: 'Gurnoor Brar', role: 'bowler', batting: 7, bowling: 77 },
+            { name: 'Kulwant Khejroliya', role: 'bowler', batting: 6, bowling: 75 },
+            { name: 'Manav Suthar', role: 'bowler', batting: 6, bowling: 74 }
         ]
     },
     lsg: {
         name: 'Lucknow Super Giants',
         players: [
-            { name: 'Ayush Badoni', role: 'batsman' },
-            { name: 'David Miller', role: 'batsman' },
-            { name: 'Aiden Markram', role: 'batsman' },
-            { name: 'Himmat Singh', role: 'batsman' },
-            { name: 'Nicholas Pooran', role: 'wicketkeeper' },
-            { name: 'Rishabh Pant', role: 'wicketkeeper' },
-            { name: 'Aryan Juyal', role: 'wicketkeeper' },
-            { name: 'Abdul Samad', role: 'allrounder' },
-            { name: 'Mitchell Marsh', role: 'allrounder' },
-            { name: 'Arshin Kulkarni', role: 'allrounder' },
-            { name: 'Yuvraj Chaudhary', role: 'allrounder' },
-            { name: 'Shahbaz Ahmed', role: 'allrounder' },
-            { name: 'Ravi Bishnoi', role: 'bowler' },
-            { name: 'Digvesh Singh', role: 'bowler' },
-            { name: 'M Siddharth', role: 'bowler' },
-            { name: 'Mayank Yadav', role: 'bowler' },
-            { name: 'Mohsin Khan', role: 'bowler' },
-            { name: 'Avesh Khan', role: 'bowler' },
-            { name: 'Akash Deep', role: 'bowler' },
-            { name: 'Shamar Joseph', role: 'bowler' },
-            { name: 'Prince Yadav', role: 'bowler' },
-            { name: 'Rajvardhan Hangargekar', role: 'bowler' },
-            { name: 'Matthew Breetzke', role: 'bowler' }
+            { name: 'Ayush Badoni', role: 'batsman', batting: 72, bowling: 8 },
+            { name: 'David Miller', role: 'batsman', batting: 80, bowling: 10 },
+            { name: 'Aiden Markram', role: 'batsman', batting: 81, bowling: 25 },
+            { name: 'Himmat Singh', role: 'batsman', batting: 70, bowling: 8 },
+            { name: 'Nicholas Pooran', role: 'wicketkeeper', batting: 78, bowling: 5 },
+            { name: 'Rishabh Pant', role: 'wicketkeeper', batting: 80, bowling: 5 },
+            { name: 'Aryan Juyal', role: 'wicketkeeper', batting: 70, bowling: 5 },
+            { name: 'Abdul Samad', role: 'allrounder', batting: 65, bowling: 65 },
+            { name: 'Mitchell Marsh', role: 'allrounder', batting: 73, bowling: 78 },
+            { name: 'Arshin Kulkarni', role: 'allrounder', batting: 62, bowling: 60 },
+            { name: 'Yuvraj Chaudhary', role: 'allrounder', batting: 62, bowling: 60 },
+            { name: 'Shahbaz Ahmed', role: 'allrounder', batting: 65, bowling: 65 },
+            { name: 'Ravi Bishnoi', role: 'bowler', batting: 8, bowling: 79 },
+            { name: 'Digvesh Singh', role: 'bowler', batting: 7, bowling: 70 },
+            { name: 'M Siddharth', role: 'bowler', batting: 6, bowling: 75 },
+            { name: 'Mayank Yadav', role: 'bowler', batting: 8, bowling: 75 },
+            { name: 'Mohsin Khan', role: 'bowler', batting: 7, bowling: 74 },
+            { name: 'Avesh Khan', role: 'bowler', batting: 8, bowling: 78 },
+            { name: 'Akash Deep', role: 'bowler', batting: 7, bowling: 75 },
+            { name: 'Shamar Joseph', role: 'bowler', batting: 8, bowling: 77 },
+            { name: 'Prince Yadav', role: 'bowler', batting: 6, bowling: 70 },
+            { name: 'Rajvardhan Hangargekar', role: 'bowler', batting: 8, bowling: 75 },
+            { name: 'Matthew Breetzke', role: 'bowler', batting: 7, bowling: 70 }
         ]
     },
     dc: {
         name: 'Dehli Capitals',
         players: [
-            { name: 'Jake Fraser-McGurk', role: 'batsman' },
-            { name: 'Tristan Stubbs', role: 'wicketkeeper' },
-            { name: 'Faf du Plessis', role: 'batsman' },
-            { name: 'Harry Brook', role: 'batsman' },
-            { name: 'Karun Nair', role: 'batsman' },
-            { name: 'Sameer Rizvi', role: 'batsman' },
-            { name: 'Ashutosh Sharma', role: 'batsman' },
-            { name: 'Donovan Ferreira', role: 'batsman' },
-            { name: 'KL Rahul', role: 'wicketkeeper' },
-            { name: 'Abishek Porel', role: 'wicketkeeper' },
-            { name: 'Axar Patel', role: 'allrounder' },
-            { name: 'Ajay Mandal', role: 'allrounder' },
-            { name: 'Vipraj Nigam', role: 'allrounder' },
-            { name: 'Manvath Kumar', role: 'allrounder' },
-            { name: 'Madhav Tiwari', role: 'allrounder' },
-            { name: 'Kuldeep Yadav', role: 'bowler' },
-            { name: 'Mitchell Starc', role: 'bowler' },
-            { name: 'T Natarajan', role: 'bowler' },
-            { name: 'Mohit Sharma', role: 'bowler' },
-            { name: 'Mukesh Kumar', role: 'bowler' },
-            { name: 'Darshan Nalkande', role: 'bowler' },
-            { name: 'Dushmantha Chameera', role: 'bowler' },
-            { name: 'Tripurana Vijay', role: 'bowler' }
+            { name: 'Jake Fraser-McGurk', role: 'batsman', batting: 72, bowling: 8 },
+            { name: 'Tristan Stubbs', role: 'wicketkeeper', batting: 70, bowling: 5 },
+            { name: 'Faf du Plessis', role: 'batsman', batting: 85, bowling: 10 },
+            { name: 'Harry Brook', role: 'batsman', batting: 80, bowling: 15 },
+            { name: 'Karun Nair', role: 'batsman', batting: 74, bowling: 10 },
+            { name: 'Sameer Rizvi', role: 'batsman', batting: 70, bowling: 8 },
+            { name: 'Ashutosh Sharma', role: 'batsman', batting: 70, bowling: 8 },
+            { name: 'Donovan Ferreira', role: 'batsman', batting: 70, bowling: 8 },
+            { name: 'KL Rahul', role: 'wicketkeeper', batting: 82, bowling: 15 },
+            { name: 'Abishek Porel', role: 'wicketkeeper', batting: 70, bowling: 5 },
+            { name: 'Axar Patel', role: 'allrounder', batting: 65, bowling: 80 },
+            { name: 'Ajay Mandal', role: 'allrounder', batting: 62, bowling: 60 },
+            { name: 'Vipraj Nigam', role: 'allrounder', batting: 62, bowling: 60 },
+            { name: 'Manvath Kumar', role: 'allrounder', batting: 62, bowling: 60 },
+            { name: 'Madhav Tiwari', role: 'allrounder', batting: 62, bowling: 60 },
+            { name: 'Kuldeep Yadav', role: 'bowler', batting: 10, bowling: 81 },
+            { name: 'Mitchell Starc', role: 'bowler', batting: 25, bowling: 87 },
+            { name: 'T Natarajan', role: 'bowler', batting: 8, bowling: 78 },
+            { name: 'Mohit Sharma', role: 'bowler', batting: 8, bowling: 75 },
+            { name: 'Mukesh Kumar', role: 'bowler', batting: 7, bowling: 70 },
+            { name: 'Darshan Nalkande', role: 'bowler', batting: 7, bowling: 70 },
+            { name: 'Dushmantha Chameera', role: 'bowler', batting: 8, bowling: 75 },
+            { name: 'Tripurana Vijay', role: 'bowler', batting: 7, bowling: 70 }
         ]
     },
     srh: {
         name: 'Sunrisers Hyderabad',
         players: [
-            { name: 'Abhishek Sharma', role: 'batsman' },
-            { name: 'Travis Head', role: 'batsman' },
-            { name: 'Atharva Taide', role: 'batsman' },
-            { name: 'Abhinav Manohar', role: 'batsman' },
-            { name: 'Aniket Varma', role: 'batsman' },
-            { name: 'Sachin Baby', role: 'batsman' },
-            { name: 'Heinrich Klaassen', role: 'wicketkeeper' },
-            { name: 'Ishan Kishan', role: 'wicketkeeper' },
-            { name: 'Nitish Kumar Reddy', role: 'allrounder' },
-            { name: 'Harshal Patel', role: 'allrounder' },
-            { name: 'Kamindu Mendis', role: 'allrounder' },
-            { name: 'Pat Cummins', role: 'bowler' },
-            { name: 'Mohammed Shami', role: 'bowler' },
-            { name: 'Simarjeet Singh', role: 'bowler' },
-            { name: 'Jaydev Unadkat', role: 'bowler' },
-            { name: 'Wiaan Mulder', role: 'allrounder' },
-            { name: 'Echan Malinga', role: 'bowler' },
-            { name: 'Rahul Chahar', role: 'bowler' },
-            { name: 'Adam Zampa', role: 'bowler' },
-            { name: 'Zeeshan Ansari', role: 'bowler' }
+            { name: 'Abhishek Sharma', role: 'batsman', batting: 72, bowling: 8 },
+            { name: 'Travis Head', role: 'batsman', batting: 79, bowling: 20 },
+            { name: 'Atharva Taide', role: 'batsman', batting: 70, bowling: 8 },
+            { name: 'Abhinav Manohar', role: 'batsman', batting: 70, bowling: 8 },
+            { name: 'Aniket Varma', role: 'batsman', batting: 70, bowling: 8 },
+            { name: 'Sachin Baby', role: 'batsman', batting: 70, bowling: 8 },
+            { name: 'Heinrich Klaassen', role: 'wicketkeeper', batting: 80, bowling: 5 },
+            { name: 'Ishan Kishan', role: 'wicketkeeper', batting: 78, bowling: 5 },
+            { name: 'Nitish Kumar Reddy', role: 'allrounder', batting: 65, bowling: 65 },
+            { name: 'Harshal Patel', role: 'allrounder', batting: 65, bowling: 70 },
+            { name: 'Kamindu Mendis', role: 'allrounder', batting: 65, bowling: 65 },
+            { name: 'Pat Cummins', role: 'bowler', batting: 35, bowling: 88, captain: true },
+            { name: 'Mohammed Shami', role: 'bowler', batting: 20, bowling: 85 },
+            { name: 'Simarjeet Singh', role: 'bowler', batting: 7, bowling: 70 },
+            { name: 'Jaydev Unadkat', role: 'bowler', batting: 8, bowling: 75 },
+            { name: 'Wiaan Mulder', role: 'allrounder', batting: 64, bowling: 74 },
+            { name: 'Echan Malinga', role: 'bowler', batting: 7, bowling: 70 },
+            { name: 'Rahul Chahar', role: 'bowler', batting: 10, bowling: 78 },
+            { name: 'Adam Zampa', role: 'bowler', batting: 15, bowling: 82 },
+            { name: 'Zeeshan Ansari', role: 'bowler', batting: 7, bowling: 70 }
         ]
     },
     pbks: {
         name: 'Punjab Kings',
         players: [
-            { name: 'Shreyas Iyer', role: 'batsman', captain: true },
-            { name: 'Pyla Avinash', role: 'batsman' },
-            { name: 'Nehal Wadhera', role: 'batsman' },
-            { name: 'Priyansh Arya', role: 'batsman' },
-            { name: 'Harnoor Singh', role: 'batsman' },
-            { name: 'Musheer Khan', role: 'batsman' },
-            { name: 'Vishnu Vinod', role: 'wicketkeeper' },
-            { name: 'Josh Inglis', role: 'wicketkeeper' },
-            { name: 'Prabhsimran Singh', role: 'wicketkeeper' },
-            { name: 'Glenn Maxwell', role: 'allrounder' },
-            { name: 'Mitchell Owen', role: 'allrounder' },
-            { name: 'Marcus Stoinis', role: 'allrounder' },
-            { name: 'Shashank Singh', role: 'allrounder' },
-            { name: 'Aaron Hardie', role: 'allrounder' },
-            { name: 'Azmatullah Omarzai', role: 'allrounder' },
-            { name: 'Marco Jansen', role: 'allrounder' },
-            { name: 'Suryansh Shedge', role: 'allrounder' },
-            { name: 'Lockie Ferguson', role: 'bowler' },
-            { name: 'Kyle Jamieson', role: 'bowler' },
-            { name: 'Kuldeep Sen', role: 'bowler' },
-            { name: 'Vijaykumar Vyshak', role: 'bowler' },
-            { name: 'Yash Thakur', role: 'bowler' },
-            { name: 'Xavier Bartlett', role: 'bowler' },
-            { name: 'Arshdeep Singh', role: 'bowler' },
-            { name: 'Yuzvendra Chahal', role: 'bowler' },
-            { name: 'Praveen Dubey', role: 'bowler' },
-            { name: 'Harpreet Brar', role: 'bowler' }
+            { name: 'Shreyas Iyer', role: 'batsman', batting: 78, bowling: 20, captain: true },
+            { name: 'Pyla Avinash', role: 'batsman', batting: 70, bowling: 8 },
+            { name: 'Nehal Wadhera', role: 'batsman', batting: 70, bowling: 8 },
+            { name: 'Priyansh Arya', role: 'batsman', batting: 70, bowling: 8 },
+            { name: 'Harnoor Singh', role: 'batsman', batting: 70, bowling: 8 },
+            { name: 'Musheer Khan', role: 'batsman', batting: 70, bowling: 8 },
+            { name: 'Vishnu Vinod', role: 'wicketkeeper', batting: 70, bowling: 5 },
+            { name: 'Josh Inglis', role: 'wicketkeeper', batting: 70, bowling: 5 },
+            { name: 'Prabhsimran Singh', role: 'wicketkeeper', batting: 70, bowling: 5 },
+            { name: 'Glenn Maxwell', role: 'allrounder', batting: 81, bowling: 70 },
+            { name: 'Mitchell Owen', role: 'allrounder', batting: 65, bowling: 65 },
+            { name: 'Marcus Stoinis', role: 'allrounder', batting: 74, bowling: 75 },
+            { name: 'Shashank Singh', role: 'allrounder', batting: 65, bowling: 65 },
+            { name: 'Aaron Hardie', role: 'allrounder', batting: 65, bowling: 65 },
+            { name: 'Azmatullah Omarzai', role: 'allrounder', batting: 65, bowling: 65 },
+            { name: 'Marco Jansen', role: 'allrounder', batting: 65, bowling: 65 },
+            { name: 'Suryansh Shedge', role: 'allrounder', batting: 62, bowling: 60 },
+            { name: 'Lockie Ferguson', role: 'bowler', batting: 15, bowling: 84 },
+            { name: 'Kyle Jamieson', role: 'bowler', batting: 10, bowling: 81 },
+            { name: 'Kuldeep Sen', role: 'bowler', batting: 8, bowling: 75 },
+            { name: 'Vijaykumar Vyshak', role: 'bowler', batting: 7, bowling: 70 },
+            { name: 'Yash Thakur', role: 'bowler', batting: 7, bowling: 70 },
+            { name: 'Xavier Bartlett', role: 'bowler', batting: 7, bowling: 70 },
+            { name: 'Arshdeep Singh', role: 'bowler', batting: 18, bowling: 78 },
+            { name: 'Yuzvendra Chahal', role: 'bowler', batting: 12, bowling: 83 },
+            { name: 'Praveen Dubey', role: 'bowler', batting: 7, bowling: 70 },
+            { name: 'Harpreet Brar', role: 'bowler', batting: 7, bowling: 70 }
         ]
     },
     rr: {
         name: 'Rajasthan Royals',
         players: [
-            { name: 'Yashasvi Jaiswal', role: 'batsman' },
-            { name: 'Riyan Parag', role: 'batsman' },
-            { name: 'Shimron Hetmyer', role: 'batsman' },
-            { name: 'Nitish Rana', role: 'batsman' },
-            { name: 'Shubham Dubey', role: 'batsman' },
-            { name: 'Vaibhav Suryavanshi', role: 'batsman' },
-            { name: 'Kunal Rathore', role: 'batsman' },
-            { name: 'Sanju Samson', role: 'wicketkeeper' },
-            { name: 'Dhruv Jurel', role: 'wicketkeeper' },
-            { name: 'Wanindu Hasaranga', role: 'allrounder' },
-            { name: 'Sandeep Sharma', role: 'bowler' },
-            { name: 'Jofra Archer', role: 'bowler' },
-            { name: 'Akash Madhwal', role: 'bowler' },
-            { name: 'Tushar Deshpande', role: 'bowler' },
-            { name: 'Yudhvir Singh', role: 'bowler' },
-            { name: 'Fazalhaq Farooqi', role: 'bowler' },
-            { name: 'Kwena Maphaka', role: 'bowler' },
-            { name: 'Ashok Sharma', role: 'bowler' },
-            { name: 'Maheesh Theekshana', role: 'bowler' },
-            { name: 'Kumar Kartikeya', role: 'bowler' }
+            { name: 'Yashasvi Jaiswal', role: 'batsman', batting: 78, bowling: 10 },
+            { name: 'Riyan Parag', role: 'batsman', batting: 70, bowling: 8 },
+            { name: 'Shimron Hetmyer', role: 'batsman', batting: 80, bowling: 10 },
+            { name: 'Nitish Rana', role: 'batsman', batting: 74, bowling: 10 },
+            { name: 'Shubham Dubey', role: 'batsman', batting: 70, bowling: 8 },
+            { name: 'Vaibhav Suryavanshi', role: 'batsman', batting: 70, bowling: 8 },
+            { name: 'Kunal Rathore', role: 'batsman', batting: 70, bowling: 8 },
+            { name: 'Sanju Samson', role: 'wicketkeeper', batting: 76, bowling: 5, captain: true },
+            { name: 'Dhruv Jurel', role: 'wicketkeeper', batting: 70, bowling: 5 },
+            { name: 'Wanindu Hasaranga', role: 'allrounder', batting: 68, bowling: 80 },
+            { name: 'Sandeep Sharma', role: 'bowler', batting: 8, bowling: 75 },
+            { name: 'Jofra Archer', role: 'bowler', batting: 25, bowling: 88 },
+            { name: 'Akash Madhwal', role: 'bowler', batting: 7, bowling: 70 },
+            { name: 'Tushar Deshpande', role: 'bowler', batting: 7, bowling: 70 },
+            { name: 'Yudhvir Singh', role: 'bowler', batting: 7, bowling: 70 },
+            { name: 'Fazalhaq Farooqi', role: 'bowler', batting: 7, bowling: 70 },
+            { name: 'Kwena Maphaka', role: 'bowler', batting: 7, bowling: 70 },
+            { name: 'Ashok Sharma', role: 'bowler', batting: 7, bowling: 70 },
+            { name: 'Maheesh Theekshana', role: 'bowler', batting: 15, bowling: 82 },
+            { name: 'Kumar Kartikeya', role: 'bowler', batting: 7, bowling: 70 }
         ]
     },
     kkr: {
         name: 'Kolkata Knight Riders',
         players: [
-            { name: 'Angkrish Raghuvanshi', role: 'batsman' },
-            { name: 'Rinku Singh', role: 'batsman' },
-            { name: 'Ramandeep Singh', role: 'batsman' },
-            { name: 'Rovman Powell', role: 'batsman' },
-            { name: 'Manish Pandey', role: 'batsman' },
-            { name: 'Luvnith Sisodia', role: 'batsman' },
-            { name: 'Ajinkya Rahane', role: 'batsman' },
-            { name: 'Anukul Roy', role: 'batsman' },
-            { name: 'Quinton de Kock', role: 'wicketkeeper' },
-            { name: 'Rahmanullah Gurbaz', role: 'wicketkeeper' },
-            { name: 'Moeen Ali', role: 'allrounder' },
-            { name: 'Andre Russell', role: 'allrounder' },
-            { name: 'Sunil Narine', role: 'allrounder' },
-            { name: 'Venkatesh Iyer', role: 'allrounder' },
-            { name: 'Varun Chakravarthy', role: 'bowler' },
-            { name: 'Mayank Markande', role: 'bowler' },
-            { name: 'Harshit Rana', role: 'bowler' },
-            { name: 'Anrich Nortje', role: 'bowler' },
-            { name: 'Vaibhav Arora', role: 'bowler' },
-            { name: 'Spencer Johnson', role: 'bowler' },
-            { name: 'Chetan Sakariya', role: 'bowler' }
+            { name: 'Angkrish Raghuvanshi', role: 'batsman', batting: 70, bowling: 8 },
+            { name: 'Rinku Singh', role: 'batsman', batting: 74, bowling: 10 },
+            { name: 'Ramandeep Singh', role: 'batsman', batting: 70, bowling: 8 },
+            { name: 'Rovman Powell', role: 'batsman', batting: 70, bowling: 8 },
+            { name: 'Manish Pandey', role: 'batsman', batting: 70, bowling: 8 },
+            { name: 'Luvnith Sisodia', role: 'batsman', batting: 70, bowling: 8 },
+            { name: 'Ajinkya Rahane', role: 'batsman', batting: 78, bowling: 10 },
+            { name: 'Anukul Roy', role: 'batsman', batting: 70, bowling: 8 },
+            { name: 'Quinton de Kock', role: 'wicketkeeper', batting: 82, bowling: 5 },
+            { name: 'Rahmanullah Gurbaz', role: 'wicketkeeper', batting: 70, bowling: 5 },
+            { name: 'Moeen Ali', role: 'allrounder', batting: 73, bowling: 78 },
+            { name: 'Andre Russell', role: 'allrounder', batting: 80, bowling: 85 },
+            { name: 'Sunil Narine', role: 'allrounder', batting: 70, bowling: 80 },
+            { name: 'Venkatesh Iyer', role: 'allrounder', batting: 68, bowling: 70 },
+            { name: 'Varun Chakravarthy', role: 'bowler', batting: 8, bowling: 75 },
+            { name: 'Mayank Markande', role: 'bowler', batting: 8, bowling: 75 },
+            { name: 'Harshit Rana', role: 'bowler', batting: 7, bowling: 70 },
+            { name: 'Anrich Nortje', role: 'bowler', batting: 15, bowling: 86 },
+            { name: 'Vaibhav Arora', role: 'bowler', batting: 7, bowling: 70 },
+            { name: 'Spencer Johnson', role: 'bowler', batting: 7, bowling: 70 },
+            { name: 'Chetan Sakariya', role: 'bowler', batting: 7, bowling: 70 }
         ]
     }
 };
@@ -608,7 +608,7 @@ function getBestEleven(players) {
     const batsmen = players.filter(p => p.role === 'batsman' || p.role === 'wicketkeeper').sort((a, b) => b.batting - a.batting);
     const allrounders = players.filter(p => p.role === 'allrounder').sort((a, b) => (b.batting + b.bowling) - (a.batting + a.bowling));
     const bowlers = players.filter(p => p.role === 'bowler').sort((a, b) => b.bowling - a.bowling);
-
+    
     let selectedBatsmen = [];
     let selectedAllrounders = [];
     let selectedBowlers = [];
@@ -983,22 +983,22 @@ function calculateBallOutcome(batsman, bowler) {
     // Format-based scoring rates (reduced by 8%)
     let outProb, boundaryProb, dotProb, run1Prob, run2Prob, run3Prob;
     if (currentMatchType === 'test') {
-        outProb = 0.844 * Math.max(0.015, Math.min(0.09, (bowlingSkill - battingSkill + 30) / 350));
+        outProb = 0.844 * Math.max(0.02, Math.min(0.11, (bowlingSkill - battingSkill + 30) / 320));
         boundaryProb = 0.92 * Math.max(0.03, (battingSkill - 60) / 180);
         dotProb = 0.92 * Math.max(0.25, (bowlingSkill - battingSkill + 40) / 90);
         run1Prob = 0.92 * 0.60;
         run2Prob = 0.92 * 0.20;
         run3Prob = 0.92 * 0.10;
     } else if (currentMatchType === 'odi') {
-        outProb = Math.max(0.012, Math.min(0.08, (bowlingSkill - battingSkill + 30) / 370));
-        outProb *= 0.6764678; // Reduce wicket probability by 22.3532%
+        outProb = Math.max(0.015, Math.min(0.10, (bowlingSkill - battingSkill + 30) / 340));
+        outProb *= 0.7764678; // Reduce wicket probability by 22.3532%
         boundaryProb = 0.92 * Math.max(0.045, (battingSkill - 55) / 140);
         dotProb = 0.92 * Math.max(0.18, (bowlingSkill - battingSkill + 30) / 100);
         run1Prob = 0.92 * 0.50;
         run2Prob = 0.92 * 0.25;
         run3Prob = 0.92 * 0.17;
     } else {
-        outProb = Math.max(0.01, Math.min(0.07, (bowlingSkill - battingSkill + 30) / 400));
+        outProb = Math.max(0.012, Math.min(0.09, (bowlingSkill - battingSkill + 30) / 370));
         boundaryProb = 0.92 * Math.max(0.06, (battingSkill - 50) / 100);
         dotProb = 0.92 * Math.max(0.13, (bowlingSkill - battingSkill + 20) / 110);
         run1Prob = 0.92 * 0.45;
@@ -1424,6 +1424,7 @@ function renderTournamentBracket() {
             matchIdx++;
         }
         bracketDiv.appendChild(roundDiv);
+        
         currentTeams = roundWinners.slice();
         roundWinners = [];
     }
@@ -1657,17 +1658,49 @@ function getRandomDismissal(batsman, bowler, fieldingLineup, isTournament = fals
     const r = Math.random();
     let dismissal = '';
     if (r < 0.25) {
-        dismissal = `bowled`;
-    } else if (r < 0.45) {
-        dismissal = `caught`;
-    } else if (r < 0.60) {
-        dismissal = `lbw`;
+        dismissal = `b ${bowler.name}`;
     } else if (r < 0.70) {
-        dismissal = `run out`;
+        // Caught
+        let fielders = fieldingLineup.filter(f => f.name !== bowler.name && f.name !== batsman.name);
+        let fielder = fielders[Math.floor(Math.random() * fielders.length)]?.name || 'fielder';
+        dismissal = `c ${fielder} b ${bowler.name}`;
     } else if (r < 0.85) {
-        dismissal = `stumped`;
+        dismissal = `lbw b ${bowler.name}`;
+    } else if (r < 0.95) {
+        // Run out
+        let fielders = fieldingLineup.filter(f => f.name !== batsman.name);
+        let fielder = fielders[Math.floor(Math.random() * fielders.length)]?.name || 'fielder';
+        dismissal = `run out (${fielder})`;
+    } else if (r < 0.98) {
+        // Stumped (simulate spinner with 50% chance)
+        let wks = fieldingLineup.filter(f => f.role === 'wicketkeeper');
+        let wk = wks.length ? wks[0].name : 'wk';
+        dismissal = `stumped (${wk}) b ${bowler.name}`;
     } else {
-        dismissal = `hit wicket`;
+        dismissal = 'hit wicket';
     }
     return dismissal;
 }
+
+// Lineup validation function
+function validateLineup(lineup) {
+    let bowlers = 0;
+    let allrounders = 0;
+    for (const player of lineup) {
+        if (player.role === 'bowler') bowlers++;
+        if (player.role === 'allrounder') allrounders++;
+    }
+    // At least 3 bowlers (excluding allrounders)
+    if (bowlers < 3) return false;
+    // At least 5 bowlers+allrounders
+    if ((bowlers + allrounders) < 5) return false;
+    // At least 1 allrounder
+    if (allrounders < 1) return false;
+    return true;
+}
+
+// Initialise the application
+document.addEventListener('DOMContentLoaded', function() {
+    // Set default match type
+    setMatchType('t20');
+}); 
