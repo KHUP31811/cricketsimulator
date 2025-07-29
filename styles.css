@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-    background: linear-gradient(120deg, #232526 0%, #414345 100%);
+    background: linear-gradient(120deg, #fff3e0 0%, #ffe0b2 100%);
     min-height: 100vh;
     color: #222;
 }
@@ -18,13 +18,13 @@ body {
     padding: 32px 24px;
     background: rgba(255,255,255,0.97);
     border-radius: 24px;
-    box-shadow: 0 8px 32px rgba(44,62,80,0.18);
+    box-shadow: 0 8px 32px rgba(255,152,0,0.13);
 }
 
 .header {
     text-align: center;
     margin-bottom: 36px;
-    color: #232526;
+    color: #e65100;
 }
 
 .header h1 {
@@ -32,7 +32,7 @@ body {
     font-weight: 800;
     margin-bottom: 8px;
     letter-spacing: 1px;
-    text-shadow: 0 2px 8px rgba(44,62,80,0.08);
+    text-shadow: 0 2px 8px rgba(255,152,0,0.10);
 }
 
 .header p {
@@ -42,10 +42,10 @@ body {
 }
 
 .main-content {
-    background: linear-gradient(120deg, #f8fafc 0%, #e9ecef 100%);
+    background: linear-gradient(120deg, #fff8e1 0%, #ffe0b2 100%);
     border-radius: 18px;
     padding: 28px 18px;
-    box-shadow: 0 4px 16px rgba(44,62,80,0.07);
+    box-shadow: 0 4px 16px rgba(255,152,0,0.09);
 }
 
 section {
@@ -56,8 +56,8 @@ section h2 {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 18px;
-    color: #3a3a3a;
-    border-bottom: 2px solid #667eea;
+    color: #e65100;
+    border-bottom: 2px solid #ff9800;
     padding-bottom: 7px;
     letter-spacing: 0.5px;
 }
@@ -71,7 +71,7 @@ section h2 {
 .team-selection h3, .match-type h3 {
     font-size: 1.1rem;
     margin-bottom: 12px;
-    color: #4a5568;
+    color: #fb8c00;
     font-weight: 600;
 }
 
@@ -102,8 +102,8 @@ section h2 {
 
 .team-selector select:focus {
     outline: none;
-    border-color: #667eea;
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.13);
+    border-color: #ff9800;
+    box-shadow: 0 0 0 3px rgba(255, 152, 0, 0.13);
 }
 
 .match-type-buttons {
@@ -114,28 +114,28 @@ section h2 {
 .match-btn {
     flex: 1;
     padding: 13px 0;
-    border: 2px solid #e2e8f0;
-    background: linear-gradient(120deg, #f7fafc 0%, #e9ecef 100%);
+    border: 2px solid #ffe0b2;
+    background: linear-gradient(120deg, #fff8e1 0%, #ffe0b2 100%);
     border-radius: 12px;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.2s;
-    color: #232526;
-    box-shadow: 0 2px 8px rgba(44,62,80,0.04);
+    color: #e65100;
+    box-shadow: 0 2px 8px rgba(255,152,0,0.04);
 }
 
 .match-btn:hover {
-    border-color: #667eea;
-    background: #f0f4ff;
-    color: #4f46e5;
+    border-color: #ff9800;
+    background: #fff3e0;
+    color: #ff9800;
 }
 
 .match-btn.active {
-    background: linear-gradient(120deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(120deg, #ff9800 0%, #fb8c00 100%);
     color: white;
-    border-color: #667eea;
-    box-shadow: 0 4px 16px rgba(102, 126, 234, 0.13);
+    border-color: #ff9800;
+    box-shadow: 0 4px 16px rgba(255,152,0,0.13);
 }
 
 .lineup-container {
@@ -207,11 +207,11 @@ section h2 {
 }
 
 .bowling-info {
-    background: #edf2f7;
+    background: #fff3e0;
     border-radius: 8px;
     padding: 13px;
     text-align: center;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #ffe0b2;
     margin-top: 8px;
 }
 
@@ -292,7 +292,7 @@ section h2 {
 }
 
 .simulate-btn {
-    background: linear-gradient(120deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(120deg, #ff9800 0%, #fb8c00 100%);
     color: white;
     border: none;
 }
@@ -300,22 +300,22 @@ section h2 {
 .simulate-btn:hover {
     transform: translateY(-2px) scale(1.04);
     box-shadow: 0 8px 24px rgba(102, 126, 234, 0.18);
-    background: linear-gradient(120deg, #5a67d8 0%, #6b46c1 100%);
+    background: linear-gradient(120deg, #f57c00 0%, #ffb74d 100%);
 }
 
 .reset-btn {
-    background: #e53e3e;
+    background: #ff7043;
     color: white;
     border: none;
 }
 
 .reset-btn:hover {
-    background: #c53030;
+    background: #e65100;
     transform: translateY(-2px) scale(1.04);
 }
 
 .result-summary {
-    background: linear-gradient(120deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(120deg, #ff9800 0%, #fb8c00 100%);
     color: white;
     padding: 22px;
     border-radius: 15px;
@@ -323,7 +323,7 @@ section h2 {
     text-align: center;
     font-size: 1.15rem;
     font-weight: 600;
-    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.08);
+    box-shadow: 0 2px 8px rgba(255,152,0,0.08);
 }
 
 .result-summary h3 {
@@ -340,7 +340,7 @@ section h2 {
 .scorecard-section h3 {
     font-size: 1.2rem;
     margin-bottom: 18px;
-    color: #2d3748;
+    color: #e65100;
     font-weight: 700;
 }
 
@@ -351,17 +351,17 @@ section h2 {
 }
 
 .scorecard {
-    background: #f7fafc;
+    background: #fff8e1;
     border-radius: 12px;
     padding: 18px 10px;
-    border: 1.5px solid #e2e8f0;
-    box-shadow: 0 2px 8px rgba(44,62,80,0.04);
+    border: 1.5px solid #ffe0b2;
+    box-shadow: 0 2px 8px rgba(255,152,0,0.04);
 }
 
 .scorecard h4 {
     font-size: 1.1rem;
     margin-bottom: 12px;
-    color: #2d3748;
+    color: #e65100;
     text-align: center;
     font-weight: 700;
 }
@@ -381,9 +381,9 @@ section h2 {
 }
 
 .scorecard-table th {
-    background: #edf2f7;
+    background: #ffe0b2;
     font-weight: 700;
-    color: #4a5568;
+    color: #fb8c00;
 }
 
 .scorecard-table tr:hover {
@@ -400,8 +400,8 @@ section h2 {
     padding: 12px 32px;
     border: none;
     border-radius: 12px 12px 0 0;
-    background: #e9ecef;
-    color: #232526;
+    background: #ffe0b2;
+    color: #e65100;
     font-size: 1.1rem;
     font-weight: 700;
     cursor: pointer;
@@ -409,9 +409,9 @@ section h2 {
     box-shadow: 0 2px 8px rgba(44,62,80,0.04);
 }
 .tab-btn.active {
-    background: linear-gradient(120deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(120deg, #ff9800 0%, #fb8c00 100%);
     color: #fff;
-    box-shadow: 0 4px 16px rgba(102, 126, 234, 0.13);
+    box-shadow: 0 4px 16px rgba(255,152,0,0.13);
 }
 
 .tournament-setup {
@@ -423,6 +423,7 @@ section h2 {
     margin-bottom: 18px;
     font-size: 1.08rem;
     font-weight: 600;
+    color: #e65100;
 }
 #tournament-team-selectors {
     display: flex;
@@ -436,7 +437,7 @@ section h2 {
 }
 .tournament-team-selector label {
     font-weight: 500;
-    color: #4a5568;
+    color: #fb8c00;
     margin-bottom: 4px;
     display: block;
 }
@@ -466,43 +467,43 @@ section h2 {
     align-items: center;
 }
 .bracket-match {
-    background: #f7fafc;
+    background: #fff8e1;
     border-radius: 10px;
     padding: 12px 18px;
-    border: 1.5px solid #e2e8f0;
+    border: 1.5px solid #ffe0b2;
     box-shadow: 0 2px 8px rgba(44,62,80,0.04);
     min-width: 170px;
     text-align: center;
     font-weight: 600;
-    color: #232526;
+    color: #e65100;
     font-size: 1.05rem;
 }
 .bracket-winner {
-    background: linear-gradient(120deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(120deg, #ff5100 0%, #fb8c00 100%);
     color: #fff;
     font-weight: 700;
-    border: 2px solid #667eea;
+    border: 2px solid #ff9800;
 }
 #tournament-results {
     margin-top: 18px;
     text-align: center;
     font-size: 1.15rem;
     font-weight: 600;
-    color: #4a5568;
+    color: #fb8c00;
 }
 .scorecard-modal-bg {
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(30, 41, 59, 0.45);
+    background: rgba(255, 152, 0, 0.18);
     z-index: 1000;
 }
 .scorecard-modal {
     position: fixed;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    background: #fff;
+    background: #fff8e1;
     border-radius: 18px;
-    box-shadow: 0 8px 32px rgba(44,62,80,0.18);
+    box-shadow: 0 8px 32px rgba(255,152,0,0.18);
     padding: 32px 24px 18px 24px;
     z-index: 1001;
     min-width: 340px;
