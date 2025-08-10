@@ -337,6 +337,54 @@ section h2 {
     gap: 32px;
 }
 
+/* Innings toggle styling for test matches */
+.innings-toggle {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.innings-toggle h3 {
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+    color: #e65100;
+    font-weight: 700;
+}
+
+.toggle-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.toggle-btn {
+    padding: 12px 24px;
+    border: 2px solid #e2e8f0;
+    background: #f7fafc;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #4a5568;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.04);
+}
+
+.toggle-btn:hover {
+    border-color: #ff9800;
+    background: #fff3e0;
+    color: #ff9800;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255,152,0,0.15);
+}
+
+.toggle-btn.active {
+    background: linear-gradient(120deg, #ff9800 0%, #fb8c00 100%);
+    color: white;
+    border-color: #ff9800;
+    box-shadow: 0 4px 16px rgba(255,152,0,0.13);
+    transform: translateY(-1px);
+}
+
 .scorecard-section h3 {
     font-size: 1.2rem;
     margin-bottom: 18px;
@@ -543,4 +591,54 @@ section h2 {
         flex-direction: row;
         gap: 12px;
     }
+    .toggle-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .toggle-btn {
+        width: 200px;
+    }
+}
+
+.tour-option {
+    background: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.tour-option:hover {
+    border-color: #4f46e5;
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.15);
+}
+
+.tour-option h3 {
+    color: #1f2937;
+    margin-bottom: 8px;
+    font-size: 1.4rem;
+}
+
+.tour-option p {
+    color: #6b7280;
+    margin-bottom: 16px;
+    font-size: 1rem;
+}
+
+.tour-option .simulate-btn {
+    background: #4f46e5;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.tour-option .simulate-btn:hover {
+    background: #3730a3;
 } 
