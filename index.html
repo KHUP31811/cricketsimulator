@@ -18,6 +18,7 @@
         <div class="tab-bar">
             <button class="tab-btn active" id="single-tab" onclick="showPanel('single')">Single Match</button>
             <button class="tab-btn" id="tournament-tab" onclick="showPanel('tournament')">Tournament</button>
+            <button class="tab-btn" id="tours-tab" onclick="showPanel('tours')">Tours</button>
         </div>
 
         <div id="single-panel" class="main-content">
@@ -42,6 +43,8 @@
                                     <option value="bangladesh">Bangladesh</option>
                                     <option value="westindies">West Indies</option>
                                     <option value="afghanistan">Afghanistan</option>
+                                    <option value="scotland">Scotland</option>
+                                    <option value="ireland">Ireland</option>
                                 </optgroup>
                                 <optgroup label="IPL Teams">
                                     <option value="rcb">Royal Challengers Bangalore</option>
@@ -72,6 +75,8 @@
                                     <option value="bangladesh">Bangladesh</option>
                                     <option value="westindies">West Indies</option>
                                     <option value="afghanistan">Afghanistan</option>
+                                    <option value="scotland">Scotland</option>
+                                    <option value="ireland">Ireland</option>
                                 </optgroup>
                                 <optgroup label="IPL Teams">
                                     <option value="rcb">Royal Challengers Bangalore</option>
@@ -204,6 +209,37 @@
                 <h2>Tournament Bracket</h2>
                 <div id="tournament-bracket"></div>
                 <div id="tournament-results"></div>
+            </section>
+        </div>
+
+        <div id="tours-panel" class="main-content" style="display:none;">
+            <section class="tournament-setup">
+                <h2>Test Series Tours</h2>
+                <div class="tournament-options">
+                    <div class="tour-option">
+                        <h3>The Ashes</h3>
+                        <p>England vs Australia - 5 Test Matches</p>
+                        <button class="simulate-btn" onclick="startTestSeries('ashes')">Start Ashes Series</button>
+                    </div>
+                    <div class="tour-option">
+                        <h3>Pataudi Trophy</h3>
+                        <p>India vs England - 5 Test Matches</p>
+                        <button class="simulate-btn" onclick="startTestSeries('pataudi')">Start Pataudi Trophy</button>
+                    </div>
+                    <div class="tour-option">
+                        <h3>Border-Gavaskar Trophy</h3>
+                        <p>India vs Australia - 5 Test Matches</p>
+                        <button class="simulate-btn" onclick="startTestSeries('border-gavaskar')">Start Border-Gavaskar Trophy</button>
+                    </div>
+                </div>
+                <div style="margin-top: 20px; text-align: center;">
+                    <button onclick="testTourSeries()" style="padding: 10px 20px; background: #ff6b6b; color: white; border: none; border-radius: 8px; cursor: pointer;">Test Tour Series (Debug)</button>
+                </div>
+            </section>
+            <section id="tour-series-section" style="display:none;">
+                <h2>Test Series Progress</h2>
+                <div id="tour-series-bracket"></div>
+                <div id="tour-series-results"></div>
             </section>
         </div>
     </div>
