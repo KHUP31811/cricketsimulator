@@ -749,7 +749,7 @@ const teams = {
             { name: 'Jos Buttler', role: 'wicketkeeper', batting: 85, bowling: 5 },
             { name: 'Kumar Kushagra', role: 'wicketkeeper', batting: 70, bowling: 5 },
             { name: 'Anuj Rawat', role: 'wicketkeeper', batting: 70, bowling: 5 },
-            { name: 'Shubman Gill', role: 'batsman', batting: 80, bowling: 10, captain: true },
+            { name: 'Shubman Gill', role: 'batsman', batting: 83, bowling: 10, captain: true },
             { name: 'Sai Sudharsan', role: 'batsman', batting: 75, bowling: 10 },
             { name: 'Shahrukh Khan', role: 'batsman', batting: 72, bowling: 8 },
             { name: 'Sai Kishore', role: 'batsman', batting: 70, bowling: 8 },
