@@ -3504,7 +3504,9 @@ function renderTournamentTeamSelectors() {
         selDiv.appendChild(label);
         selDiv.appendChild(select);
         selectorDiv.appendChild(selDiv);
-        
+    }
+}
+       
 function preventDuplicateTournamentTeams() {
     const sizeInput = document.querySelector('input[name="tournament-size"]:checked'); const size = sizeInput.value; const actualSize = size === 'ipl4' ? 4 : parseInt(size);
     const selected = [];
