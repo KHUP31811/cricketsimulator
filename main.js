@@ -2801,6 +2801,58 @@ function simulateInnings(battingTeam, bowlingTeam, config, inningsNum, target = 
     let currentBowler = 0;
     let ballsInOver = 0;
     let overRuns = 0;
+    
+    // MODIFIED: Enhanced bowler management
+function manageBowlerChange(matchType, bowlerStats, bowlingLineup, currentBowler, over) {
+    const rules = getBowlerRules(matchType);
+    
+    // Check if current bowler has reached maximum overs
+    const currentBowlerStats = bowlerStats[bowlingLineup[currentBowler].name];
+    const oversCompleted = Math.floor(currentBowlerStats.balls / 6);
+    
+    if (oversCompleted >= rules.maxOvers) {
+        console.log(`${bowlingLineup[currentBowler].name} has reached max overs (${rules.maxOvers})`);
+        return rotateToNextBowler(bowlingLineup, currentBowler, bowlerStats, rules);
+    }
+    
+    // Format-specific rotation
+    if (matchType === 't20' && (over + 1) % 2 === 0) {
+        return rotateToNextBowler(bowlingLineup, currentBowler, bowlerStats, rules);
+    } else if (matchType === 'odi' && (over + 1) % 5 === 0) {
+        return rotateToNextBowler(bowlingLineup, currentBowler, bowlerStats, rules);
+    } else if (matchType === 'test' && (over + 1) % 4 === 0) {
+        return rotateToNextBowler(bowlingLineup, currentBowler, bowlerStats, rules);
+    }
+    
+    return currentBowler;
+}
+
+function getBowlerRules(matchType) {
+    const rules = {
+        t20: { maxOvers: 4, preferredSpell: 1, rotationOvers: 2 },
+        odi: { maxOvers: 10, preferredSpell: 3, rotationOvers: 5 },
+        test: { maxOvers: 30, preferredSpell: 5, rotationOvers: 4 }
+    };
+    return rules[matchType] || rules.odi;
+}
+
+function rotateToNextBowler(bowlingLineup, currentBowler, bowlerStats, rules) {
+    let nextBowler = (currentBowler + 1) % bowlingLineup.length;
+    let attempts = 0;
+    
+    // Find a bowler who hasn't exceeded max overs
+    while (attempts < bowlingLineup.length) {
+        const bowlerOvers = Math.floor((bowlerStats[bowlingLineup[nextBowler].name]?.balls || 0) / 6);
+        if (bowlerOvers < rules.maxOvers) {
+            return nextBowler;
+        }
+        nextBowler = (nextBowler + 1) % bowlingLineup.length;
+        attempts++;
+    }
+    
+    // Fallback: all bowlers maxed out (shouldn't happen with proper squad size)
+    return currentBowler;
+}
     for (let over = 0; over < config.overs && innings.wickets < config.maxWickets; over++) {
         overRuns = 0;
         // Enforce T20/ODI over cap per bowler
