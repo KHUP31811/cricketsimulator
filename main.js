@@ -2801,6 +2801,27 @@ function simulateInnings(battingTeam, bowlingTeam, config, inningsNum, target = 
     let currentBowler = 0;
     let ballsInOver = 0;
     let overRuns = 0;
+    for (let over = 0; over < config.overs && innings.wickets < config.maxWickets; over++) {
+        overRuns = 0;
+        // Enforce T20/ODI over cap per bowler
+        if (currentMatchType === 't20' || currentMatchType === 'odi') {
+            let maxBalls = currentMatchType === 't20' ? 24 : 60;
+            let attempts = 0;
+            while (bowlerStats[bowlingLineup[currentBowler].name].balls >= maxBalls && attempts < bowlingLineup.length) {
+                currentBowler = (currentBowler + 1) % bowlingLineup.length;
+                attempts++;
+            }
+        }
+        for (let ball = 0; ball < 6 && innings.wickets < config.maxWickets; ball++) {
+            // For T20/ODI, check before every ball
+            if (currentMatchType === 't20' || currentMatchType === 'odi') {
+                let maxBalls = currentMatchType === 't20' ? 24 : 60;
+                let attempts = 0;
+                while (bowlerStats[bowlingLineup[currentBowler].name].balls >= maxBalls && attempts < bowlingLineup.length) {
+                    currentBowler = (currentBowler + 1) % bowlingLineup.length;
+                    attempts++;
+                }
+            }
             const batsman = battingLineup[currentBatsman1];
             const bowler = bowlingLineup[currentBowler];
             const outcome = calculateBallOutcome(batsman, bowler);
@@ -3401,18 +3422,15 @@ function renderTournamentTeamSelectors() {
     const presetEl = document.getElementById('league-preset');
     const preset = presetEl ? presetEl.value : 'custom';
     const presetKeys = (typeof getLeagueTeamKeys === 'function') ? getLeagueTeamKeys(preset) : null;
-    
-    // INCLUDE CPL TEAMS
     const teamKeys = [
         'india', 'australia', 'england', 'southafrica', 'newzealand', 'pakistan', 'srilanka', 'bangladesh', 'westindies', 'afghanistan',
         'rcb', 'csk', 'mi', 'gt', 'lsg', 'dc', 'srh', 'pbks', 'rr', 'kkr',
         'brisbane_heat', 'sydney_thunder', 'melbourne_stars', 'perth_scorchers', 'sydney_sixers', 'melbourne_renegades', 'adelaide_strikers', 'hobart_hurricanes',
-        'antigua_barbuda_falcons', 'trinbago_knight_riders', 'guyana_amazon_warriors', 'barbados_royals', 'saint_lucia_kings', 'st_kitts_nevis_patriots',
         'southern_brave', 'northern_superchargers', 'welsh_fire', 'london_spirit', 'oval_invincibles', 'manchester_originals', 'birmingham_phoenix', 'trent_rockets'
     ];
-    
     const availableKeys = presetKeys ? teamKeys.filter(k => presetKeys.includes(k)) : teamKeys;
 
+    // Define labels based on tournament size
     let labels = [];
     let actualSize = 0;
 
@@ -3440,16 +3458,17 @@ function renderTournamentTeamSelectors() {
         select.appendChild(defaultOpt);
 
         if (!presetKeys) {
+            // Add categorized groups in custom mode
             const internationalOptgroup = document.createElement('optgroup');
             internationalOptgroup.label = 'International Teams';
             const iplOptgroup = document.createElement('optgroup');
             iplOptgroup.label = 'IPL Teams';
             const bblOptgroup = document.createElement('optgroup');
             bblOptgroup.label = 'BBL Teams';
-            const cplOptgroup = document.createElement('optgroup');
-            cplOptgroup.label = 'CPL Teams';
             const hundredOptgroup = document.createElement('optgroup');
             hundredOptgroup.label = 'The Hundred Teams';
+            const cplOptgroup = document.createElement('optgroup');
+            cplOptgroup.label = 'CPL Teams';
 
             availableKeys.forEach(key => {
                 const opt = document.createElement('option');
@@ -3473,6 +3492,7 @@ function renderTournamentTeamSelectors() {
             select.appendChild(cplOptgroup);
             select.appendChild(hundredOptgroup);
         } else {
+            // Flat list for preset leagues
             availableKeys.forEach(key => {
                 const opt = document.createElement('option');
                 opt.value = key;
@@ -3485,7 +3505,7 @@ function renderTournamentTeamSelectors() {
         selectorDiv.appendChild(selDiv);
     }
 }
-       
+
 function preventDuplicateTournamentTeams() {
     const sizeInput = document.querySelector('input[name="tournament-size"]:checked'); const size = sizeInput.value; const actualSize = size === 'ipl4' ? 4 : parseInt(size);
     const selected = [];
