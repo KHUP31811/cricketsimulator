@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=5">
-    <meta name="theme-color" content="#ff9800">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cricket Simulator</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -90,16 +89,6 @@
                                     <option value="saint_lucia_kings">Saint Lucia Kings</option>
                                     <option value="st_kitts_nevis_patriots">St Kitts & Nevis Patriots</option>
                                 </optgroup>
-                                <optgroup label="PSL Teams">
-                                    <option value="hyderabad_kingsmen">Hyderabad Kingsmen</option>
-                                    <option value="islamabad_united">Islamabad United</option>
-                                    <option value="karachi_kings">Karachi Kings</option>
-                                    <option value="lahore_qalandars">Lahore Qalandars</option>
-                                    <option value="multan_sultans">Multan Sultans</option>
-                                    <option value="peshawar_zalmi">Peshawar Zalmi</option>
-                                    <option value="quetta_gladiators">Quetta Gladiators</option>
-                                    <option value="rawalpindi_pindiz">Rawalpindi Pindiz</option>
-                                </optgroup>
                             </select>
                         </div>
                         <div class="team-selector">
@@ -160,16 +149,6 @@
                                     <option value="saint_lucia_kings">Saint Lucia Kings</option>
                                     <option value="st_kitts_nevis_patriots">St Kitts & Nevis Patriots</option>
                                 </optgroup>
-                                <optgroup label="PSL Teams">
-                                    <option value="hyderabad_kingsmen">Hyderabad Kingsmen</option>
-                                    <option value="islamabad_united">Islamabad United</option>
-                                    <option value="karachi_kings">Karachi Kings</option>
-                                    <option value="lahore_qalandars">Lahore Qalandars</option>
-                                    <option value="multan_sultans">Multan Sultans</option>
-                                    <option value="peshawar_zalmi">Peshawar Zalmi</option>
-                                    <option value="quetta_gladiators">Quetta Gladiators</option>
-                                    <option value="rawalpindi_pindiz">Rawalpindi Pindiz</option>
-                                </optgroup>
                             </select>
                         </div>
                     </div>
@@ -213,12 +192,9 @@
                 <h2>Lineup Management</h2>
                 <div class="lineup-container">
                     <div class="team-lineup" id="team1-lineup">
-                        <div
-                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
                             <h3 id="team1-name" style="margin: 0;">Team 1</h3>
-                            <button class="simulate-btn" style="padding: 6px 14px; font-size: 0.9rem; margin-bottom: 0;"
-                                onclick="createLineup(1, teams[document.getElementById('team1').value])"><i
-                                    class="fas fa-magic"></i> Auto Pick Best XI</button>
+                            <button class="simulate-btn" style="padding: 6px 14px; font-size: 0.9rem; margin-bottom: 0;" onclick="createLineup(1, teams[document.getElementById('team1').value])"><i class="fas fa-magic"></i> Auto Pick Best XI</button>
                         </div>
                         <div class="lineup-grid" style="grid-template-columns: 1fr 1fr;">
                             <div class="batting-order player-list-container">
@@ -235,12 +211,9 @@
                     </div>
 
                     <div class="team-lineup" id="team2-lineup">
-                        <div
-                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
                             <h3 id="team2-name" style="margin: 0;">Team 2</h3>
-                            <button class="simulate-btn" style="padding: 6px 14px; font-size: 0.9rem; margin-bottom: 0;"
-                                onclick="createLineup(2, teams[document.getElementById('team2').value])"><i
-                                    class="fas fa-magic"></i> Auto Pick Best XI</button>
+                            <button class="simulate-btn" style="padding: 6px 14px; font-size: 0.9rem; margin-bottom: 0;" onclick="createLineup(2, teams[document.getElementById('team2').value])"><i class="fas fa-magic"></i> Auto Pick Best XI</button>
                         </div>
                         <div class="lineup-grid" style="grid-template-columns: 1fr 1fr;">
                             <div class="batting-order player-list-container">
@@ -263,35 +236,12 @@
 
             <!-- Simulation Controls -->
             <section class="simulation-controls">
-                <button class="simulate-btn" onclick="simulateMatch(false)">
+                <button class="simulate-btn" onclick="simulateMatch()">
                     <i class="fas fa-play"></i> Simulate Match
-                </button>
-                <button class="simulate-btn" onclick="simulateMatch(true)" style="background: #10b981;">
-                    <i class="fas fa-list"></i> Simulate Ball-by-Ball
                 </button>
                 <button class="reset-btn" onclick="resetMatch()">
                     <i class="fas fa-redo"></i> Reset
                 </button>
-            </section>
-
-            <!-- Commentary Panel -->
-            <section class="commentary-panel" id="commentary-panel" style="display: none; margin-top: 20px;">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-                    <h2>Match Commentary</h2>
-                    <div style="display: flex; gap: 10px;">
-                        <button class="simulate-btn" onclick="skipToInningsEnd()"
-                            style="padding: 6px 12px; font-size: 0.9rem;">Skip to End of Innings</button>
-                        <button class="simulate-btn" onclick="skipToMatchEnd()"
-                            style="padding: 6px 12px; font-size: 0.9rem;">Skip to End of Match</button>
-                    </div>
-                </div>
-                <div id="commentary-score"
-                    style="font-size: 1.5rem; font-weight: bold; text-align: center; margin-bottom: 10px; background: #f8fafc; padding: 15px; border-radius: 8px;">
-                </div>
-                <div id="commentary-box"
-                    style="height: 400px; overflow-y: auto; background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 15px; display: flex; flex-direction: column; gap: 10px;">
-                    <!-- Commentary items go here -->
-                </div>
             </section>
 
             <!-- Match Results -->
@@ -328,7 +278,6 @@
                     <button class="simulate-btn" onclick="startLeagueTournament('bbl')">Start BBL Tournament</button>
                     <button class="simulate-btn" onclick="startLeagueTournament('hundred')">Start The Hundred</button>
                     <button class="simulate-btn" onclick="startLeagueTournament('cpl')">Start CPL Tournament</button>
-                    <button class="simulate-btn" onclick="startLeagueTournament('psl')">Start PSL Tournament</button>
                 </div>
             </section>
             <section id="league-bracket-section" style="display:none;">
@@ -342,10 +291,6 @@
             <section class="tournament-setup">
                 <h2>Tournament Setup</h2>
                 <div class="tournament-options">
-                    <label>
-                        <input type="radio" name="tournament-size" value="3" onchange="renderTournamentTeamSelectors()">
-                        3 Teams (Tri-Series)
-                    </label>
                     <label>
                         <input type="radio" name="tournament-size" value="4" checked
                             onchange="renderTournamentTeamSelectors()"> 4 Teams
@@ -433,7 +378,7 @@
         </div>
     </div>
 
-    <script src="main.js"></script>
+    <script src="Main.js"></script>
 </body>
 
 </html>
