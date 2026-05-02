@@ -350,6 +350,7 @@ const teams = {
             // Batsmen
             { name: 'Jos Buttler', role: 'wicketkeeper', batting: 85, bowling: 5, captain: true },
             { name: 'Jonny Bairstow', role: 'wicketkeeper', batting: 83, bowling: 5 },
+            { name: 'Joe Root', role: 'batsman', batting: 83, bowling: 65 },
             { name: 'Harry Brook', role: 'batsman', batting: 80, bowling: 15 },
             { name: 'Ben Duckett', role: 'batsman', batting: 77, bowling: 10 },
             { name: 'Ollie Pope', role: 'batsman', batting: 75, bowling: 20 },
@@ -374,8 +375,7 @@ const teams = {
             { name: 'Brydon Carse', role: 'bowler', batting: 10, bowling: 79, bowlingStyle: 'fastBowler', strongVariation: 'bouncer', weakVariation: 'fullLength' },
             { name: 'Rehan Ahmed', role: 'bowler', batting: 25, bowling: 77, bowlingStyle: 'legSpinner', strongVariation: 'flipper', weakVariation: 'googly' },
             { name: 'Craig Overton', role: 'bowler', batting: 10, bowling: 75, bowlingStyle: 'fastBowler', strongVariation: 'yorker', weakVariation: 'shortPitch' },
-            { name: 'Tymal Mills', role: 'bowler', batting: 10, bowling: 75, bowlingStyle: 'fastBowler', strongVariation: 'yorker', weakVariation: 'shortPitch' },
-            { name: 'Steven Finn', role: 'bowler', batting: 10, bowling: 75, bowlingStyle: 'fastBowler', strongVariation: 'yorker', weakVariation: 'shortPitch' }
+            { name: 'Tymal Mills', role: 'bowler', batting: 10, bowling: 75, bowlingStyle: 'fastBowler', strongVariation: 'yorker', weakVariation: 'shortPitch' }
         ]
     },
 
@@ -396,7 +396,8 @@ const teams = {
             { name: 'Marco Jansen', role: 'allrounder', batting: 65, bowling: 82 },
             { name: 'Andile Phehlukwayo', role: 'allrounder', batting: 68, bowling: 75 },
             { name: 'Dwaine Pretorius', role: 'allrounder', batting: 62, bowling: 76 },
-            { name: 'Wiaan Mulder', role: 'allrounder', batting: 64, bowling: 74 },
+            { name: 'Wiaan Mulder', role: 'allrounder', batting: 76, bowling: 74 },
+            { name: 'Junior Dala', role: 'allrounder', batting: 64, bowling: 73 },
 
             // Bowlers
             { name: 'Kagiso Rabada', role: 'bowler', batting: 25, bowling: 87, bowlingStyle: 'fastBowler', strongVariation: 'yorker', weakVariation: 'shortPitch' },
@@ -423,6 +424,9 @@ const teams = {
             { name: 'Finn Allen', role: 'batsman', batting: 76, bowling: 15 },
             { name: 'Mark Chapman', role: 'batsman', batting: 74, bowling: 25 },
             { name: 'Tim Seifert', role: 'wicketkeeper', batting: 72, bowling: 5 },
+            { name: 'Henry Nicholls', role: 'batsman', batting: 72, bowling: 5 },
+            { name: 'Will Young', role: 'batsman', batting: 72, bowling: 5 },
+            { name: 'Tom Blundell', role: 'wicketkeeper', batting: 72, bowling: 5 },
 
             // All-rounders
             { name: 'Mitchell Santner', role: 'allrounder', batting: 68, bowling: 80 },
@@ -613,346 +617,234 @@ const teams = {
         ]
     },
 
-    scotland: {
-        name: 'Scotland',
-        players: [
-            // Batsmen
-            { name: 'Richie Berrington', role: 'batsman', batting: 78, bowling: 20, captain: true },
-            { name: 'George Munsey', role: 'batsman', batting: 76, bowling: 10 },
-            { name: 'Kyle Coetzer', role: 'batsman', batting: 74, bowling: 15 },
-            { name: 'Calum MacLeod', role: 'batsman', batting: 75, bowling: 10 },
-            { name: 'Matthew Cross', role: 'wicketkeeper', batting: 72, bowling: 5 },
-            { name: 'Ollie Hairs', role: 'batsman', batting: 70, bowling: 10 },
-            { name: 'Dylan Budge', role: 'batsman', batting: 68, bowling: 10 },
-            { name: 'Michael Leask', role: 'batsman', batting: 69, bowling: 15 },
-
-            // All-rounders
-            { name: 'Mark Watt', role: 'allrounder', batting: 65, bowling: 78 },
-            { name: 'Safyaan Sharif', role: 'allrounder', batting: 62, bowling: 75 },
-            { name: 'Josh Davey', role: 'allrounder', batting: 64, bowling: 76 },
-            { name: 'Alasdair Evans', role: 'allrounder', batting: 60, bowling: 74 },
-            { name: 'Gavin Main', role: 'allrounder', batting: 58, bowling: 72 },
-            { name: 'Hamza Tahir', role: 'allrounder', batting: 56, bowling: 73 },
-
-            // Bowlers
-            { name: 'Bradley Currie', role: 'bowler', batting: 8, bowling: 76 },
-            { name: 'Chris Sole', role: 'bowler', batting: 6, bowling: 75 },
-            { name: 'Gavin Goudie', role: 'bowler', batting: 5, bowling: 74 },
-            { name: 'Adrian Neill', role: 'bowler', batting: 7, bowling: 73 },
-            { name: 'Tom Sole', role: 'bowler', batting: 4, bowling: 72 },
-            { name: 'Scott Cameron', role: 'bowler', batting: 3, bowling: 71 },
-            { name: 'Liam Naylor', role: 'bowler', batting: 5, bowling: 70 },
-            { name: 'Jack Jarvis', role: 'bowler', batting: 6, bowling: 69 }
-        ]
-    },
-
-    ireland: {
-        name: 'Ireland',
-        players: [
-            // Batsmen
-            { name: 'Paul Stirling', role: 'batsman', batting: 80, bowling: 25, captain: true },
-            { name: 'Andrew Balbirnie', role: 'batsman', batting: 77, bowling: 15 },
-            { name: 'Harry Tector', role: 'batsman', batting: 75, bowling: 10 },
-            { name: 'Lorcan Tucker', role: 'wicketkeeper', batting: 73, bowling: 5 },
-            { name: 'Curtis Campher', role: 'batsman', batting: 71, bowling: 20 },
-            { name: 'George Dockrell', role: 'batsman', batting: 69, bowling: 15 },
-            { name: 'Neil Rock', role: 'wicketkeeper', batting: 67, bowling: 5 },
-            { name: 'Stephen Doheny', role: 'batsman', batting: 68, bowling: 10 },
-
-            // All-rounders
-            { name: 'Gareth Delany', role: 'allrounder', batting: 70, bowling: 72 },
-            { name: 'Mark Adair', role: 'allrounder', batting: 66, bowling: 75 },
-            { name: 'Simi Singh', role: 'allrounder', batting: 64, bowling: 73 },
-            { name: 'Andy McBrine', role: 'allrounder', batting: 62, bowling: 74 },
-            { name: 'Ben White', role: 'allrounder', batting: 60, bowling: 71 },
-            { name: 'Fionn Hand', role: 'allrounder', batting: 58, bowling: 70 },
-
-            // Bowlers
-            { name: 'Joshua Little', role: 'bowler', batting: 12, bowling: 78 },
-            { name: 'Barry McCarthy', role: 'bowler', batting: 10, bowling: 76 },
-            { name: 'Craig Young', role: 'bowler', batting: 8, bowling: 75 },
-            { name: 'Conor Olphert', role: 'bowler', batting: 6, bowling: 74 },
-            { name: 'Graham Hume', role: 'bowler', batting: 5, bowling: 73 },
-            { name: 'Thomas Mayes', role: 'bowler', batting: 4, bowling: 72 },
-            { name: 'Matthew Foster', role: 'bowler', batting: 7, bowling: 71 },
-            { name: 'Muzamil Sherzad', role: 'bowler', batting: 3, bowling: 70 }
-        ]
-    },
-
     // IPL TEAMS
     rcb: {
-        name: 'Royal Challengers Bangalore',
+        name: 'Royal Challengers Bengaluru',
         players: [
-            { name: 'Virat Kohli', role: 'batsman', batting: 88, bowling: 20 },
-            { name: 'Rajat Patidar', role: 'batsman', batting: 75, bowling: 10 },
-            { name: 'Devdutt Padikkal', role: 'batsman', batting: 77, bowling: 10 },
-            { name: 'Swastik Chikara', role: 'batsman', batting: 70, bowling: 8 },
-            { name: 'Phil Salt', role: 'wicketkeeper', batting: 77, bowling: 5 },
-            { name: 'Jitesh Sharma', role: 'wicketkeeper', batting: 74, bowling: 5 },
-            { name: 'Liam Livingstone', role: 'allrounder', batting: 76, bowling: 72 },
-            { name: 'Krunal Pandya', role: 'allrounder', batting: 68, bowling: 70 },
-            { name: 'Romario Shepherd', role: 'allrounder', batting: 70, bowling: 75 },
-            { name: 'Tim David', role: 'allrounder', batting: 72, bowling: 65 },
-            { name: 'Manoj Bhandage', role: 'allrounder', batting: 65, bowling: 62 },
-            { name: 'Jacob Bethell', role: 'allrounder', batting: 66, bowling: 60 },
-            { name: 'Mohit Rathee', role: 'allrounder', batting: 62, bowling: 60 },
-            { name: 'Suyash Sharma', role: 'bowler', batting: 10, bowling: 75 },
-            { name: 'Swapnil Singh', role: 'bowler', batting: 12, bowling: 72 },
-            { name: 'Yash Dayal', role: 'bowler', batting: 8, bowling: 74 },
-            { name: 'Rasikh Dar', role: 'bowler', batting: 7, bowling: 73 },
+            { name: 'Virat Kohli', role: 'batsman', batting: 92, bowling: 10 },
+            { name: 'Phil Salt', role: 'wicketkeeper', batting: 80, bowling: 5 },
+            { name: 'Rajat Patidar', role: 'batsman', batting: 76, bowling: 10, captain: true },
+            { name: 'Liam Livingstone', role: 'batsman', batting: 78, bowling: 70 },
+            { name: 'Krunal Pandya', role: 'allrounder', batting: 70, bowling: 75 },
+            { name: 'Jitesh Sharma', role: 'wicketkeeper', batting: 72, bowling: 5 },
+            { name: 'Tim David', role: 'batsman', batting: 78, bowling: 8 },
+            { name: 'Jacob Bethell', role: 'allrounder', batting: 72, bowling: 68 },
+            { name: 'Romario Shepherd', role: 'allrounder', batting: 66, bowling: 76 },
+            { name: 'Swapnil Singh', role: 'allrounder', batting: 62, bowling: 72 },
             { name: 'Josh Hazlewood', role: 'bowler', batting: 20, bowling: 85 },
             { name: 'Bhuvneshwar Kumar', role: 'bowler', batting: 18, bowling: 80 },
+            { name: 'Yash Dayal', role: 'bowler', batting: 8, bowling: 74 },
+            { name: 'Lungi Ngidi', role: 'bowler', batting: 15, bowling: 83 },
+            { name: 'Suyash Sharma', role: 'bowler', batting: 10, bowling: 75 },
             { name: 'Nuwan Thushara', role: 'bowler', batting: 9, bowling: 77 },
-            { name: 'Abhinandan Singh', role: 'bowler', batting: 6, bowling: 70 },
-            { name: 'Lungi Ngidi', role: 'bowler', batting: 15, bowling: 83 }
+            { name: 'Rasikh Dar', role: 'bowler', batting: 7, bowling: 73 },
+            { name: 'Abhinandan Singh', role: 'bowler', batting: 6, bowling: 70 }
         ]
     },
     csk: {
         name: 'Chennai Super Kings',
         players: [
-            { name: 'Ruturaj Gaikwad', role: 'batsman', batting: 80, bowling: 10, captain: true },
-            { name: 'Rahul Tripathi', role: 'batsman', batting: 74, bowling: 10 },
-            { name: 'Devon Conway', role: 'wicketkeeper', batting: 81, bowling: 5 },
-            { name: 'Matheesha Pathirana', role: 'bowler', batting: 8, bowling: 78 },
-            { name: 'Noor Ahmad', role: 'bowler', batting: 10, bowling: 75 },
-            { name: 'Khaleel Ahmed', role: 'bowler', batting: 12, bowling: 74 },
+            { name: 'Ruturaj Gaikwad', role: 'batsman', batting: 82, bowling: 10, captain: true },
             { name: 'MS Dhoni', role: 'wicketkeeper', batting: 78, bowling: 5 },
-            { name: 'Shivam Dube', role: 'allrounder', batting: 72, bowling: 68 },
+            { name: 'Shivam Dube', role: 'allrounder', batting: 73, bowling: 68 },
+            { name: 'Noor Ahmad', role: 'bowler', batting: 10, bowling: 77 },
+            { name: 'Matheesha Pathirana', role: 'bowler', batting: 8, bowling: 80 },
             { name: 'Ravindra Jadeja', role: 'allrounder', batting: 70, bowling: 82 },
-            { name: 'Vijay Shankar', role: 'allrounder', batting: 68, bowling: 65 },
-            { name: 'Rachin Ravindra', role: 'allrounder', batting: 69, bowling: 75 },
-            { name: 'Ravichandran Ashwin', role: 'allrounder', batting: 65, bowling: 80 },
+            { name: 'Devon Conway', role: 'wicketkeeper', batting: 81, bowling: 5 },
+            { name: 'Rahul Tripathi', role: 'batsman', batting: 74, bowling: 10 },
+            { name: 'Deepak Hooda', role: 'allrounder', batting: 68, bowling: 65 },
             { name: 'Sam Curran', role: 'allrounder', batting: 68, bowling: 75 },
+            { name: 'Anshul Kamboj', role: 'allrounder', batting: 62, bowling: 72 },
             { name: 'Shaik Rasheed', role: 'batsman', batting: 70, bowling: 8 },
-            { name: 'Anshul Kamboj', role: 'allrounder', batting: 62, bowling: 60 },
-            { name: 'Mukesh Choudhary', role: 'bowler', batting: 7, bowling: 72 },
-            { name: 'Deepak Hooda', role: 'allrounder', batting: 66, bowling: 65 },
-            { name: 'Gurjapneet Singh', role: 'bowler', batting: 6, bowling: 70 },
-            { name: 'Jamie Overton', role: 'allrounder', batting: 65, bowling: 68 },
-            { name: 'Kamlesh Nagarkoti', role: 'bowler', batting: 8, bowling: 72 },
-            { name: 'Nathan Ellis', role: 'bowler', batting: 10, bowling: 74 },
-            { name: 'Vansh Bedi', role: 'wicketkeeper', batting: 65, bowling: 5 },
             { name: 'Andre Siddarth', role: 'batsman', batting: 70, bowling: 8 },
-            { name: 'Shreyas Gopal', role: 'bowler', batting: 12, bowling: 72 }
+            { name: 'Vansh Bedi', role: 'wicketkeeper', batting: 65, bowling: 5 },
+            { name: 'Spencer Johnson', role: 'bowler', batting: 7, bowling: 78 },
+            { name: 'Jamie Overton', role: 'allrounder', batting: 65, bowling: 68 },
+            { name: 'Nathan Ellis', role: 'bowler', batting: 10, bowling: 74 },
+            { name: 'Kamlesh Nagarkoti', role: 'bowler', batting: 8, bowling: 72 }
         ]
     },
     mi: {
         name: 'Mumbai Indians',
         players: [
-            { name: 'Hardik Pandya', role: 'allrounder', batting: 75, bowling: 78, captain: true },
-            { name: 'Rohit Sharma', role: 'batsman', batting: 85, bowling: 20 },
-            { name: 'Jasprit Bumrah', role: 'bowler', batting: 25, bowling: 90 },
-            { name: 'Suryakumar Yadav', role: 'batsman', batting: 83, bowling: 25 },
-            { name: 'Tilak Varma', role: 'batsman', batting: 76, bowling: 10 },
-            { name: 'Trent Boult', role: 'bowler', batting: 20, bowling: 86 },
-            { name: 'Karn Sharma', role: 'bowler', batting: 12, bowling: 74 },
+            { name: 'Rohit Sharma', role: 'batsman', batting: 87, bowling: 20 },
+            { name: 'Suryakumar Yadav', role: 'batsman', batting: 85, bowling: 25 },
+            { name: 'Tilak Varma', role: 'batsman', batting: 78, bowling: 10 },
+            { name: 'Ryan Rickelton', role: 'wicketkeeper', batting: 74, bowling: 5 },
+            { name: 'Naman Dhir', role: 'allrounder', batting: 66, bowling: 65 },
             { name: 'Robin Minz', role: 'wicketkeeper', batting: 70, bowling: 5 },
-            { name: 'Naman Dhir', role: 'allrounder', batting: 65, bowling: 65 },
-            { name: 'Ryan Rickelton', role: 'wicketkeeper', batting: 72, bowling: 5 },
+            { name: 'Will Jacks', role: 'allrounder', batting: 76, bowling: 72 },
+            { name: 'Keshav Maharaj', role: 'allrounder', batting: 60, bowling: 80 },
             { name: 'Deepak Chahar', role: 'bowler', batting: 15, bowling: 80 },
-            { name: 'Allah Ghazanfar', role: 'bowler', batting: 8, bowling: 70 },
-            { name: 'Will Jacks', role: 'batsman', batting: 74, bowling: 15 },
-            { name: 'Ashwani Kumar', role: 'bowler', batting: 7, bowling: 70 },
+            { name: 'Jasprit Bumrah', role: 'bowler', batting: 25, bowling: 91 },
+            { name: 'Trent Boult', role: 'bowler', batting: 20, bowling: 86 },
+            { name: 'Allah Ghazanfar', role: 'bowler', batting: 8, bowling: 72 },
+            { name: 'Raj Bawa', role: 'allrounder', batting: 66, bowling: 65 },
             { name: 'Reece Topley', role: 'bowler', batting: 8, bowling: 79 },
             { name: 'Krishnan Shrijith', role: 'wicketkeeper', batting: 68, bowling: 5 },
-            { name: 'Mitchell Santner', role: 'allrounder', batting: 68, bowling: 80 },
-            { name: 'Raj Bawa', role: 'allrounder', batting: 66, bowling: 65 },
-            { name: 'Satyanarayana Raju', role: 'bowler', batting: 6, bowling: 70 },
             { name: 'Bevon Jacobs', role: 'batsman', batting: 70, bowling: 8 },
-            { name: 'Arjun Tendulkar', role: 'bowler', batting: 10, bowling: 72 },
-            { name: 'Vignesh Puthur', role: 'allrounder', batting: 62, bowling: 60 },
-            { name: 'Lizaad Williams', role: 'bowler', batting: 8, bowling: 80 }
+            { name: 'Satyanarayana Raju', role: 'bowler', batting: 6, bowling: 70 }
         ]
     },
     gt: {
         name: 'Gujarat Titans',
         players: [
-            { name: 'Jos Buttler', role: 'wicketkeeper', batting: 85, bowling: 5 },
-            { name: 'Kumar Kushagra', role: 'wicketkeeper', batting: 70, bowling: 5 },
-            { name: 'Anuj Rawat', role: 'wicketkeeper', batting: 70, bowling: 5 },
-            { name: 'Shubman Gill', role: 'batsman', batting: 80, bowling: 10, captain: true },
-            { name: 'Sai Sudharsan', role: 'batsman', batting: 75, bowling: 10 },
+            { name: 'Shubman Gill', role: 'batsman', batting: 82, bowling: 10, captain: true },
+            { name: 'Jos Buttler', role: 'wicketkeeper', batting: 87, bowling: 5 },
+            { name: 'Sai Sudharsan', role: 'batsman', batting: 77, bowling: 10 },
             { name: 'Shahrukh Khan', role: 'batsman', batting: 72, bowling: 8 },
-            { name: 'Sai Kishore', role: 'batsman', batting: 70, bowling: 8 },
-            { name: 'Mahipal Lomror', role: 'allrounder', batting: 68, bowling: 65 },
-            { name: 'Washington Sundar', role: 'allrounder', batting: 68, bowling: 75 },
-            { name: 'Nishant Sindhu', role: 'allrounder', batting: 65, bowling: 62 },
-            { name: 'Rashid Khan', role: 'allrounder', batting: 70, bowling: 85 },
-            { name: 'Rahul Tewatia', role: 'allrounder', batting: 66, bowling: 65 },
-            { name: 'Karim Janat', role: 'allrounder', batting: 65, bowling: 65 },
-            { name: 'Kagiso Rabada', role: 'bowler', batting: 25, bowling: 87 },
+            { name: 'Kagiso Rabada', role: 'bowler', batting: 25, bowling: 88 },
             { name: 'Mohammed Siraj', role: 'bowler', batting: 15, bowling: 82 },
+            { name: 'Kumar Kushagra', role: 'wicketkeeper', batting: 72, bowling: 5 },
+            { name: 'Washington Sundar', role: 'allrounder', batting: 68, bowling: 77 },
+            { name: 'Rashid Khan', role: 'allrounder', batting: 70, bowling: 88 },
+            { name: 'Rahul Tewatia', role: 'allrounder', batting: 68, bowling: 65 },
             { name: 'Prasidh Krishna', role: 'bowler', batting: 5, bowling: 84 },
             { name: 'Gerald Coetzee', role: 'bowler', batting: 8, bowling: 80 },
+            { name: 'Nishant Sindhu', role: 'allrounder', batting: 65, bowling: 62 },
+            { name: 'Connor Esterhuizen', role: 'batsman', batting: 72, bowling: 10 },
+            { name: 'Manav Suthar', role: 'bowler', batting: 6, bowling: 74 },
             { name: 'Arshad Khan', role: 'bowler', batting: 8, bowling: 75 },
-            { name: 'Ishant Sharma', role: 'bowler', batting: 10, bowling: 78 },
             { name: 'Gurnoor Brar', role: 'bowler', batting: 7, bowling: 77 },
-            { name: 'Kulwant Khejroliya', role: 'bowler', batting: 6, bowling: 75 },
-            { name: 'Manav Suthar', role: 'bowler', batting: 6, bowling: 74 }
+            { name: 'Kulwant Khejroliya', role: 'bowler', batting: 6, bowling: 75 }
         ]
     },
     lsg: {
         name: 'Lucknow Super Giants',
         players: [
-            { name: 'Ayush Badoni', role: 'batsman', batting: 72, bowling: 8 },
-            { name: 'David Miller', role: 'batsman', batting: 80, bowling: 10 },
-            { name: 'Aiden Markram', role: 'batsman', batting: 81, bowling: 25 },
-            { name: 'Himmat Singh', role: 'batsman', batting: 70, bowling: 8 },
-            { name: 'Nicholas Pooran', role: 'wicketkeeper', batting: 78, bowling: 5 },
-            { name: 'Rishabh Pant', role: 'wicketkeeper', batting: 80, bowling: 5 },
-            { name: 'Aryan Juyal', role: 'wicketkeeper', batting: 70, bowling: 5 },
-            { name: 'Abdul Samad', role: 'allrounder', batting: 65, bowling: 65 },
-            { name: 'Mitchell Marsh', role: 'allrounder', batting: 73, bowling: 78 },
-            { name: 'Arshin Kulkarni', role: 'allrounder', batting: 62, bowling: 60 },
-            { name: 'Yuvraj Chaudhary', role: 'allrounder', batting: 62, bowling: 60 },
-            { name: 'Shahbaz Ahmed', role: 'allrounder', batting: 65, bowling: 65 },
-            { name: 'Ravi Bishnoi', role: 'bowler', batting: 8, bowling: 79 },
+            { name: 'Rishabh Pant', role: 'wicketkeeper', batting: 85, bowling: 5, captain: true },
+            { name: 'Mitchell Marsh', role: 'allrounder', batting: 76, bowling: 78 },
+            { name: 'Ayush Badoni', role: 'batsman', batting: 74, bowling: 10 },
+            { name: 'David Miller', role: 'batsman', batting: 82, bowling: 10 },
+            { name: 'Nicholas Pooran', role: 'wicketkeeper', batting: 80, bowling: 5 },
+            { name: 'Aiden Markram', role: 'batsman', batting: 80, bowling: 25 },
+            { name: 'Abdul Samad', role: 'allrounder', batting: 66, bowling: 65 },
+            { name: 'Shahbaz Ahmed', role: 'allrounder', batting: 65, bowling: 68 },
+            { name: 'Ravi Bishnoi', role: 'bowler', batting: 8, bowling: 80 },
+            { name: 'Mayank Yadav', role: 'bowler', batting: 8, bowling: 77 },
+            { name: 'Shamar Joseph', role: 'bowler', batting: 8, bowling: 79 },
+            { name: 'Avesh Khan', role: 'bowler', batting: 8, bowling: 78 },
+            { name: 'Mohsin Khan', role: 'bowler', batting: 7, bowling: 74 },
             { name: 'Digvesh Singh', role: 'bowler', batting: 7, bowling: 70 },
             { name: 'M Siddharth', role: 'bowler', batting: 6, bowling: 75 },
-            { name: 'Mayank Yadav', role: 'bowler', batting: 8, bowling: 75 },
-            { name: 'Mohsin Khan', role: 'bowler', batting: 7, bowling: 74 },
-            { name: 'Avesh Khan', role: 'bowler', batting: 8, bowling: 78 },
-            { name: 'Akash Deep', role: 'bowler', batting: 7, bowling: 75 },
-            { name: 'Shamar Joseph', role: 'bowler', batting: 8, bowling: 77 },
-            { name: 'Prince Yadav', role: 'bowler', batting: 6, bowling: 70 },
+            { name: 'Arjun Tendulkar', role: 'bowler', batting: 10, bowling: 72 },
             { name: 'Rajvardhan Hangargekar', role: 'bowler', batting: 8, bowling: 75 },
-            { name: 'Matthew Breetzke', role: 'bowler', batting: 7, bowling: 70 }
+            { name: 'Akash Deep', role: 'bowler', batting: 7, bowling: 75 },
+            { name: 'Prince Yadav', role: 'bowler', batting: 6, bowling: 70 }
         ]
     },
     dc: {
-        name: 'Dehli Capitals',
+        name: 'Delhi Capitals',
         players: [
-            { name: 'Jake Fraser-McGurk', role: 'batsman', batting: 72, bowling: 8 },
-            { name: 'Tristan Stubbs', role: 'wicketkeeper', batting: 70, bowling: 5 },
-            { name: 'Faf du Plessis', role: 'batsman', batting: 85, bowling: 10 },
-            { name: 'Harry Brook', role: 'batsman', batting: 80, bowling: 15 },
-            { name: 'Karun Nair', role: 'batsman', batting: 74, bowling: 10 },
-            { name: 'Sameer Rizvi', role: 'batsman', batting: 70, bowling: 8 },
-            { name: 'Ashutosh Sharma', role: 'batsman', batting: 70, bowling: 8 },
-            { name: 'Donovan Ferreira', role: 'batsman', batting: 70, bowling: 8 },
-            { name: 'KL Rahul', role: 'wicketkeeper', batting: 85, bowling: 15 },
-            { name: 'Abishek Porel', role: 'wicketkeeper', batting: 70, bowling: 5 },
-            { name: 'Axar Patel', role: 'allrounder', batting: 65, bowling: 80 },
-            { name: 'Ajay Mandal', role: 'allrounder', batting: 62, bowling: 60 },
-            { name: 'Vipraj Nigam', role: 'allrounder', batting: 62, bowling: 60 },
-            { name: 'Manvath Kumar', role: 'allrounder', batting: 62, bowling: 60 },
-            { name: 'Madhav Tiwari', role: 'allrounder', batting: 62, bowling: 60 },
-            { name: 'Kuldeep Yadav', role: 'bowler', batting: 10, bowling: 81 },
+            { name: 'KL Rahul', role: 'wicketkeeper', batting: 86, bowling: 10, captain: true },
+            { name: 'Prithvi Shaw', role: 'batsman', batting: 80, bowling: 10 },
+            { name: 'Harry Brook', role: 'batsman', batting: 82, bowling: 15 },
+            { name: 'Axar Patel', role: 'allrounder', batting: 66, bowling: 82 },
+            { name: 'Tristan Stubbs', role: 'wicketkeeper', batting: 72, bowling: 5 },
+            { name: 'Sameer Rizvi', role: 'batsman', batting: 72, bowling: 8 },
+            { name: 'Ashutosh Sharma', role: 'batsman', batting: 71, bowling: 8 },
+            { name: 'Vipraj Nigam', role: 'allrounder', batting: 62, bowling: 68 },
+            { name: 'Kuldeep Yadav', role: 'bowler', batting: 10, bowling: 83 },
             { name: 'Mitchell Starc', role: 'bowler', batting: 25, bowling: 87 },
             { name: 'T Natarajan', role: 'bowler', batting: 8, bowling: 78 },
-            { name: 'Mohit Sharma', role: 'bowler', batting: 8, bowling: 75 },
-            { name: 'Mukesh Kumar', role: 'bowler', batting: 7, bowling: 70 },
+            { name: 'Mohit Sharma', role: 'bowler', batting: 8, bowling: 76 },
+            { name: 'Mukesh Kumar', role: 'bowler', batting: 7, bowling: 72 },
             { name: 'Darshan Nalkande', role: 'bowler', batting: 7, bowling: 70 },
-            { name: 'Dushmantha Chameera', role: 'bowler', batting: 8, bowling: 75 },
-            { name: 'Tripurana Vijay', role: 'bowler', batting: 7, bowling: 70 }
+            { name: 'Donovan Ferreira', role: 'batsman', batting: 71, bowling: 8 },
+            { name: 'Karun Nair', role: 'batsman', batting: 74, bowling: 10 },
+            { name: 'Manvath Kumar', role: 'allrounder', batting: 62, bowling: 60 }
         ]
     },
     srh: {
         name: 'Sunrisers Hyderabad',
         players: [
-            { name: 'Abhishek Sharma', role: 'batsman', batting: 72, bowling: 8 },
-            { name: 'Travis Head', role: 'batsman', batting: 79, bowling: 20 },
-            { name: 'Atharva Taide', role: 'batsman', batting: 70, bowling: 8 },
-            { name: 'Abhinav Manohar', role: 'batsman', batting: 70, bowling: 8 },
-            { name: 'Aniket Varma', role: 'batsman', batting: 70, bowling: 8 },
-            { name: 'Sachin Baby', role: 'batsman', batting: 70, bowling: 8 },
-            { name: 'Heinrich Klaassen', role: 'wicketkeeper', batting: 80, bowling: 5 },
+            { name: 'Travis Head', role: 'batsman', batting: 82, bowling: 20 },
+            { name: 'Abhishek Sharma', role: 'batsman', batting: 76, bowling: 65 },
+            { name: 'Heinrich Klaasen', role: 'wicketkeeper', batting: 82, bowling: 5 },
             { name: 'Ishan Kishan', role: 'wicketkeeper', batting: 78, bowling: 5 },
-            { name: 'Nitish Kumar Reddy', role: 'allrounder', batting: 65, bowling: 65 },
-            { name: 'Harshal Patel', role: 'allrounder', batting: 65, bowling: 70 },
-            { name: 'Kamindu Mendis', role: 'allrounder', batting: 65, bowling: 65 },
-            { name: 'Pat Cummins', role: 'bowler', batting: 35, bowling: 88, captain: true },
-            { name: 'Mohammed Shami', role: 'bowler', batting: 20, bowling: 85 },
-            { name: 'Simarjeet Singh', role: 'bowler', batting: 7, bowling: 70 },
-            { name: 'Jaydev Unadkat', role: 'bowler', batting: 8, bowling: 75 },
-            { name: 'Wiaan Mulder', role: 'allrounder', batting: 64, bowling: 74 },
-            { name: 'Echan Malinga', role: 'bowler', batting: 7, bowling: 70 },
-            { name: 'Rahul Chahar', role: 'bowler', batting: 10, bowling: 78 },
+            { name: 'Nitish Kumar Reddy', role: 'allrounder', batting: 72, bowling: 72 },
+            { name: 'Pat Cummins', role: 'allrounder', batting: 40, bowling: 88, captain: true },
+            { name: 'Mohammed Shami', role: 'bowler', batting: 20, bowling: 87 },
+            { name: 'Harshal Patel', role: 'allrounder', batting: 55, bowling: 78 },
             { name: 'Adam Zampa', role: 'bowler', batting: 15, bowling: 82 },
-            { name: 'Zeeshan Ansari', role: 'bowler', batting: 7, bowling: 70 }
+            { name: 'Atharva Taide', role: 'batsman', batting: 72, bowling: 8 },
+            { name: 'Rahul Chahar', role: 'bowler', batting: 10, bowling: 78 },
+            { name: 'Zeeshan Ansari', role: 'bowler', batting: 7, bowling: 73 },
+            { name: 'Simarjeet Singh', role: 'bowler', batting: 7, bowling: 72 },
+            { name: 'Wiaan Mulder', role: 'allrounder', batting: 66, bowling: 74 },
+            { name: 'Brydon Carse', role: 'allrounder', batting: 66, bowling: 76 },
+            { name: 'Kamindu Mendis', role: 'allrounder', batting: 74, bowling: 65 },
+            { name: 'Jaydev Unadkat', role: 'bowler', batting: 8, bowling: 74 },
+            { name: 'Aniket Varma', role: 'batsman', batting: 70, bowling: 8 }
         ]
     },
     pbks: {
         name: 'Punjab Kings',
         players: [
-            { name: 'Shreyas Iyer', role: 'batsman', batting: 78, bowling: 20, captain: true },
-            { name: 'Pyla Avinash', role: 'batsman', batting: 70, bowling: 8 },
-            { name: 'Nehal Wadhera', role: 'batsman', batting: 70, bowling: 8 },
-            { name: 'Priyansh Arya', role: 'batsman', batting: 70, bowling: 8 },
-            { name: 'Harnoor Singh', role: 'batsman', batting: 70, bowling: 8 },
-            { name: 'Musheer Khan', role: 'batsman', batting: 70, bowling: 8 },
-            { name: 'Vishnu Vinod', role: 'wicketkeeper', batting: 70, bowling: 5 },
-            { name: 'Josh Inglis', role: 'wicketkeeper', batting: 70, bowling: 5 },
-            { name: 'Prabhsimran Singh', role: 'wicketkeeper', batting: 70, bowling: 5 },
-            { name: 'Glenn Maxwell', role: 'allrounder', batting: 81, bowling: 70 },
-            { name: 'Mitchell Owen', role: 'allrounder', batting: 65, bowling: 65 },
-            { name: 'Marcus Stoinis', role: 'allrounder', batting: 74, bowling: 75 },
-            { name: 'Shashank Singh', role: 'allrounder', batting: 65, bowling: 65 },
-            { name: 'Aaron Hardie', role: 'allrounder', batting: 65, bowling: 65 },
-            { name: 'Azmatullah Omarzai', role: 'allrounder', batting: 65, bowling: 65 },
-            { name: 'Marco Jansen', role: 'allrounder', batting: 65, bowling: 65 },
-            { name: 'Suryansh Shedge', role: 'allrounder', batting: 62, bowling: 60 },
+            { name: 'Shreyas Iyer', role: 'batsman', batting: 80, bowling: 20, captain: true },
+            { name: 'Prabhsimran Singh', role: 'wicketkeeper', batting: 76, bowling: 5 },
+            { name: 'Nehal Wadhera', role: 'batsman', batting: 72, bowling: 8 },
+            { name: 'Priyansh Arya', role: 'batsman', batting: 74, bowling: 8 },
+            { name: 'Marcus Stoinis', role: 'allrounder', batting: 76, bowling: 75 },
+            { name: 'Josh Inglis', role: 'wicketkeeper', batting: 74, bowling: 5 },
+            { name: 'Shashank Singh', role: 'allrounder', batting: 70, bowling: 65 },
+            { name: 'Marco Jansen', role: 'allrounder', batting: 66, bowling: 78 },
+            { name: 'Arshdeep Singh', role: 'bowler', batting: 18, bowling: 82 },
+            { name: 'Yuzvendra Chahal', role: 'bowler', batting: 12, bowling: 84 },
             { name: 'Lockie Ferguson', role: 'bowler', batting: 15, bowling: 84 },
-            { name: 'Kyle Jamieson', role: 'bowler', batting: 10, bowling: 81 },
-            { name: 'Kuldeep Sen', role: 'bowler', batting: 8, bowling: 75 },
-            { name: 'Vijaykumar Vyshak', role: 'bowler', batting: 7, bowling: 70 },
-            { name: 'Yash Thakur', role: 'bowler', batting: 7, bowling: 70 },
-            { name: 'Xavier Bartlett', role: 'bowler', batting: 7, bowling: 70 },
-            { name: 'Arshdeep Singh', role: 'bowler', batting: 18, bowling: 78 },
-            { name: 'Yuzvendra Chahal', role: 'bowler', batting: 12, bowling: 83 },
-            { name: 'Praveen Dubey', role: 'bowler', batting: 7, bowling: 70 },
-            { name: 'Harpreet Brar', role: 'bowler', batting: 7, bowling: 70 }
+            { name: 'Xavier Bartlett', role: 'bowler', batting: 7, bowling: 74 },
+            { name: 'Suryansh Shedge', role: 'allrounder', batting: 62, bowling: 60 },
+            { name: 'Azmatullah Omarzai', role: 'allrounder', batting: 66, bowling: 72 },
+            { name: 'Pyla Avinash', role: 'batsman', batting: 70, bowling: 8 },
+            { name: 'Harnoor Singh', role: 'batsman', batting: 68, bowling: 8 },
+            { name: 'Musheer Khan', role: 'batsman', batting: 72, bowling: 8 },
+            { name: 'Kuldeep Sen', role: 'bowler', batting: 8, bowling: 75 }
         ]
     },
     rr: {
         name: 'Rajasthan Royals',
         players: [
-            { name: 'Yashasvi Jaiswal', role: 'batsman', batting: 78, bowling: 10 },
-            { name: 'Riyan Parag', role: 'batsman', batting: 70, bowling: 8 },
-            { name: 'Shimron Hetmyer', role: 'batsman', batting: 80, bowling: 10 },
-            { name: 'Nitish Rana', role: 'batsman', batting: 74, bowling: 10 },
-            { name: 'Shubham Dubey', role: 'batsman', batting: 70, bowling: 8 },
-            { name: 'Vaibhav Suryavanshi', role: 'batsman', batting: 70, bowling: 8 },
-            { name: 'Kunal Rathore', role: 'batsman', batting: 70, bowling: 8 },
-            { name: 'Sanju Samson', role: 'wicketkeeper', batting: 76, bowling: 5, captain: true },
-            { name: 'Dhruv Jurel', role: 'wicketkeeper', batting: 70, bowling: 5 },
-            { name: 'Wanindu Hasaranga', role: 'allrounder', batting: 68, bowling: 80 },
-            { name: 'Sandeep Sharma', role: 'bowler', batting: 8, bowling: 75 },
-            { name: 'Jofra Archer', role: 'bowler', batting: 25, bowling: 88 },
-            { name: 'Akash Madhwal', role: 'bowler', batting: 7, bowling: 70 },
-            { name: 'Tushar Deshpande', role: 'bowler', batting: 7, bowling: 70 },
-            { name: 'Yudhvir Singh', role: 'bowler', batting: 7, bowling: 70 },
-            { name: 'Fazalhaq Farooqi', role: 'bowler', batting: 7, bowling: 70 },
-            { name: 'Kwena Maphaka', role: 'bowler', batting: 7, bowling: 70 },
-            { name: 'Ashok Sharma', role: 'bowler', batting: 7, bowling: 70 },
+            { name: 'Sanju Samson', role: 'wicketkeeper', batting: 80, bowling: 5, captain: true },
+            { name: 'Yashasvi Jaiswal', role: 'batsman', batting: 84, bowling: 10 },
+            { name: 'Vaibhav Suryavanshi', role: 'batsman', batting: 76, bowling: 8 },
+            { name: 'Riyan Parag', role: 'batsman', batting: 74, bowling: 65 },
+            { name: 'Shimron Hetmyer', role: 'batsman', batting: 82, bowling: 10 },
+            { name: 'Dhruv Jurel', role: 'wicketkeeper', batting: 72, bowling: 5 },
+            { name: 'Wanindu Hasaranga', role: 'allrounder', batting: 68, bowling: 82 },
             { name: 'Maheesh Theekshana', role: 'bowler', batting: 15, bowling: 82 },
-            { name: 'Kumar Kartikeya', role: 'bowler', batting: 7, bowling: 70 }
+            { name: 'Jofra Archer', role: 'bowler', batting: 25, bowling: 89 },
+            { name: 'Sandeep Sharma', role: 'bowler', batting: 8, bowling: 75 },
+            { name: 'Shubham Dubey', role: 'batsman', batting: 70, bowling: 8 },
+            { name: 'Nitish Rana', role: 'batsman', batting: 74, bowling: 10 },
+            { name: 'Fazalhaq Farooqi', role: 'bowler', batting: 7, bowling: 76 },
+            { name: 'Kwena Maphaka', role: 'bowler', batting: 7, bowling: 74 },
+            { name: 'Akash Madhwal', role: 'bowler', batting: 7, bowling: 72 },
+            { name: 'Kumar Kartikeya', role: 'bowler', batting: 7, bowling: 72 },
+            { name: 'Yudhvir Singh', role: 'bowler', batting: 7, bowling: 70 },
+            { name: 'Kunal Rathore', role: 'batsman', batting: 68, bowling: 8 }
         ]
     },
     kkr: {
         name: 'Kolkata Knight Riders',
         players: [
-            { name: 'Angkrish Raghuvanshi', role: 'batsman', batting: 70, bowling: 8 },
-            { name: 'Rinku Singh', role: 'batsman', batting: 74, bowling: 10 },
-            { name: 'Ramandeep Singh', role: 'batsman', batting: 70, bowling: 8 },
-            { name: 'Rovman Powell', role: 'batsman', batting: 70, bowling: 8 },
-            { name: 'Manish Pandey', role: 'batsman', batting: 70, bowling: 8 },
-            { name: 'Luvnith Sisodia', role: 'batsman', batting: 70, bowling: 8 },
-            { name: 'Ajinkya Rahane', role: 'batsman', batting: 78, bowling: 10 },
-            { name: 'Anukul Roy', role: 'batsman', batting: 70, bowling: 8 },
-            { name: 'Quinton de Kock', role: 'wicketkeeper', batting: 82, bowling: 5 },
-            { name: 'Rahmanullah Gurbaz', role: 'wicketkeeper', batting: 70, bowling: 5 },
-            { name: 'Moeen Ali', role: 'allrounder', batting: 73, bowling: 78 },
-            { name: 'Andre Russell', role: 'allrounder', batting: 80, bowling: 85 },
-            { name: 'Sunil Narine', role: 'allrounder', batting: 70, bowling: 80 },
-            { name: 'Venkatesh Iyer', role: 'allrounder', batting: 68, bowling: 70 },
-            { name: 'Varun Chakravarthy', role: 'bowler', batting: 8, bowling: 75 },
-            { name: 'Mayank Markande', role: 'bowler', batting: 8, bowling: 60 },
-            { name: 'Harshit Rana', role: 'bowler', batting: 7, bowling: 70 },
-            { name: 'Anrich Nortje', role: 'bowler', batting: 15, bowling: 86 },
-            { name: 'Vaibhav Arora', role: 'bowler', batting: 7, bowling: 70 },
-            { name: 'Spencer Johnson', role: 'bowler', batting: 7, bowling: 70 },
-            { name: 'Chetan Sakariya', role: 'bowler', batting: 7, bowling: 70 }
+            { name: 'Venkatesh Iyer', role: 'batsman', batting: 74, bowling: 65, captain: true },
+            { name: 'Quinton de Kock', role: 'wicketkeeper', batting: 84, bowling: 5 },
+            { name: 'Angkrish Raghuvanshi', role: 'batsman', batting: 74, bowling: 8 },
+            { name: 'Rinku Singh', role: 'batsman', batting: 76, bowling: 10 },
+            { name: 'Andre Russell', role: 'allrounder', batting: 82, bowling: 76 },
+            { name: 'Sunil Narine', role: 'allrounder', batting: 70, bowling: 82 },
+            { name: 'Rahmanullah Gurbaz', role: 'wicketkeeper', batting: 76, bowling: 5 },
+            { name: 'Varun Chakravarthy', role: 'bowler', batting: 8, bowling: 80 },
+            { name: 'Harshit Rana', role: 'bowler', batting: 7, bowling: 76 },
+            { name: 'Anrich Nortje', role: 'bowler', batting: 15, bowling: 82 },
+            { name: 'Moeen Ali', role: 'allrounder', batting: 72, bowling: 78 },
+            { name: 'Ramandeep Singh', role: 'allrounder', batting: 68, bowling: 65 },
+            { name: 'Vaibhav Arora', role: 'bowler', batting: 7, bowling: 73 },
+            { name: 'Manish Pandey', role: 'batsman', batting: 72, bowling: 8 },
+            { name: 'Rovman Powell', role: 'batsman', batting: 76, bowling: 10 },
+            { name: 'Mayank Markande', role: 'bowler', batting: 8, bowling: 72 },
+            { name: 'Chetan Sakariya', role: 'bowler', batting: 7, bowling: 72 },
+            { name: 'Luvnith Sisodia', role: 'batsman', batting: 68, bowling: 8 }
         ]
     },
     scotland: {
@@ -1024,232 +916,169 @@ const teams = {
     brisbane_heat: {
         name: 'Brisbane Heat',
         players: [
-            // Batsmen
-            { name: 'Usman Khawaja', role: 'batsman', batting: 82, bowling: 15, captain: true },
-            { name: 'Colin Munro', role: 'batsman', batting: 80, bowling: 20 },
-            { name: 'Sam Billings', role: 'wicketkeeper', batting: 76, bowling: 5 },
-            { name: 'Nathan McSweeney', role: 'batsman', batting: 74, bowling: 10 },
-            { name: 'Max Bryant', role: 'batsman', batting: 72, bowling: 15 },
-            { name: 'Charlie Wakim', role: 'batsman', batting: 70, bowling: 10 },
-            { name: 'Jimmy Peirson', role: 'wicketkeeper', batting: 73, bowling: 5 },
-
-            // All-rounders
+            { name: 'Colin Munro', role: 'batsman', batting: 82, bowling: 20, captain: true },
+            { name: 'Max Bryant', role: 'batsman', batting: 74, bowling: 15 },
+            { name: 'Nathan McSweeney', role: 'batsman', batting: 75, bowling: 10 },
+            { name: 'Jimmy Peirson', role: 'wicketkeeper', batting: 74, bowling: 5 },
+            { name: 'Sam Billings', role: 'wicketkeeper', batting: 77, bowling: 5 },
             { name: 'Michael Neser', role: 'allrounder', batting: 68, bowling: 78 },
             { name: 'Paul Walter', role: 'allrounder', batting: 70, bowling: 75 },
-            { name: 'Spencer Johnson', role: 'allrounder', batting: 65, bowling: 76 },
-            { name: 'Will Prestwidge', role: 'allrounder', batting: 62, bowling: 72 },
-            { name: 'Xavier Bartlett', role: 'allrounder', batting: 60, bowling: 74 },
-
-            // Bowlers
+            { name: 'Xavier Bartlett', role: 'allrounder', batting: 60, bowling: 75 },
             { name: 'Mitchell Swepson', role: 'bowler', batting: 12, bowling: 76 },
             { name: 'Matthew Kuhnemann', role: 'bowler', batting: 8, bowling: 75 },
+            { name: 'Spencer Johnson', role: 'allrounder', batting: 65, bowling: 77 },
+            { name: 'Jack Wildermuth', role: 'allrounder', batting: 65, bowling: 73 },
+            { name: 'Will Prestwidge', role: 'allrounder', batting: 62, bowling: 72 },
+            { name: 'Charlie Wakim', role: 'batsman', batting: 71, bowling: 10 },
             { name: 'Josh Brown', role: 'bowler', batting: 10, bowling: 70 },
-            { name: 'Jack Wildermuth', role: 'bowler', batting: 15, bowling: 72 },
-            { name: 'Connor Sully', role: 'bowler', batting: 5, bowling: 68 },
-            { name: 'Liam Guthrie', role: 'bowler', batting: 7, bowling: 69 }
+            { name: 'Liam Guthrie', role: 'bowler', batting: 7, bowling: 70 }
         ]
     },
 
     sydney_thunder: {
         name: 'Sydney Thunder',
         players: [
-            // Batsmen
-            { name: 'David Warner', role: 'batsman', batting: 85, bowling: 20, captain: true },
-            { name: 'Alex Hales', role: 'batsman', batting: 78, bowling: 15 },
-            { name: 'Cameron Bancroft', role: 'wicketkeeper', batting: 75, bowling: 5 },
-            { name: 'Oliver Davies', role: 'batsman', batting: 73, bowling: 10 },
-            { name: 'Jason Sangha', role: 'batsman', batting: 71, bowling: 15 },
-            { name: 'Sam Konstas', role: 'batsman', batting: 69, bowling: 10 },
-            { name: 'Matthew Gilkes', role: 'wicketkeeper', batting: 72, bowling: 5 },
-
-            // All-rounders
+            { name: 'Sam Konstas', role: 'batsman', batting: 78, bowling: 10, captain: true },
+            { name: 'Oliver Davies', role: 'batsman', batting: 75, bowling: 10 },
+            { name: 'Matthew Gilkes', role: 'wicketkeeper', batting: 74, bowling: 5 },
+            { name: 'Jason Sangha', role: 'batsman', batting: 72, bowling: 15 },
             { name: 'Daniel Sams', role: 'allrounder', batting: 72, bowling: 76 },
-            { name: 'Chris Green', role: 'allrounder', batting: 68, bowling: 74 },
-            { name: 'Nathan McAndrew', role: 'allrounder', batting: 65, bowling: 73 },
-            { name: 'Liam Hatcher', role: 'allrounder', batting: 60, bowling: 72 },
-            { name: 'Tanveer Sangha', role: 'allrounder', batting: 58, bowling: 75 },
-
-            // Bowlers
+            { name: 'Chris Green', role: 'allrounder', batting: 68, bowling: 75 },
+            { name: 'Tanveer Sangha', role: 'allrounder', batting: 58, bowling: 77 },
+            { name: 'Nathan McAndrew', role: 'allrounder', batting: 65, bowling: 74 },
+            { name: 'Liam Hatcher', role: 'allrounder', batting: 60, bowling: 73 },
             { name: 'Gurinder Sandhu', role: 'bowler', batting: 10, bowling: 74 },
             { name: 'Brendan Doggett', role: 'bowler', batting: 8, bowling: 73 },
-            { name: 'Toby Gray', role: 'bowler', batting: 5, bowling: 70 },
-            { name: 'Will Salzmann', role: 'bowler', batting: 12, bowling: 71 },
             { name: 'Riley Meredith', role: 'bowler', batting: 6, bowling: 76 },
-            { name: 'Zaman Khan', role: 'bowler', batting: 4, bowling: 75 }
+            { name: 'Zaman Khan', role: 'bowler', batting: 4, bowling: 75 },
+            { name: 'Toby Gray', role: 'bowler', batting: 5, bowling: 70 },
+            { name: 'Will Salzmann', role: 'bowler', batting: 12, bowling: 71 }
         ]
     },
 
     melbourne_stars: {
         name: 'Melbourne Stars',
         players: [
-            // Batsmen
-            { name: 'Glenn Maxwell', role: 'batsman', batting: 83, bowling: 70, captain: true },
-            { name: 'Marcus Stoinis', role: 'batsman', batting: 80, bowling: 72 },
-            { name: 'Joe Clarke', role: 'wicketkeeper', batting: 77, bowling: 5 },
-            { name: 'Beau Webster', role: 'batsman', batting: 74, bowling: 65 },
-            { name: 'Hilton Cartwright', role: 'batsman', batting: 72, bowling: 60 },
-            { name: 'Campbell Kellaway', role: 'batsman', batting: 70, bowling: 10 },
+            { name: 'Joe Clarke', role: 'wicketkeeper', batting: 78, bowling: 5, captain: true },
+            { name: 'Beau Webster', role: 'batsman', batting: 76, bowling: 66 },
+            { name: 'Hilton Cartwright', role: 'batsman', batting: 73, bowling: 62 },
+            { name: 'Campbell Kellaway', role: 'batsman', batting: 72, bowling: 10 },
             { name: 'Peter Handscomb', role: 'wicketkeeper', batting: 75, bowling: 5 },
-
-            // All-rounders
-            { name: 'Liam Dawson', role: 'allrounder', batting: 70, bowling: 75 },
-            { name: 'Imad Wasim', role: 'allrounder', batting: 68, bowling: 76 },
-            { name: 'Joel Paris', role: 'allrounder', batting: 65, bowling: 74 },
-            { name: 'Mark Steketee', role: 'allrounder', batting: 62, bowling: 73 },
+            { name: 'Marcus Stoinis', role: 'allrounder', batting: 80, bowling: 74 },
+            { name: 'Imad Wasim', role: 'allrounder', batting: 70, bowling: 76 },
+            { name: 'Joel Paris', role: 'allrounder', batting: 65, bowling: 75 },
+            { name: 'Mark Steketee', role: 'allrounder', batting: 62, bowling: 74 },
             { name: 'Corey Rocchiccioli', role: 'allrounder', batting: 58, bowling: 72 },
-
-            // Bowlers
-            { name: 'Adam Zampa', role: 'bowler', batting: 15, bowling: 78 },
+            { name: 'Adam Zampa', role: 'bowler', batting: 15, bowling: 80 },
+            { name: 'Haris Rauf', role: 'bowler', batting: 6, bowling: 78 },
+            { name: 'Tom Rogers', role: 'bowler', batting: 7, bowling: 72 },
             { name: 'Scott Boland', role: 'bowler', batting: 8, bowling: 76 },
-            { name: 'Haris Rauf', role: 'bowler', batting: 6, bowling: 77 },
-            { name: 'Usama Mir', role: 'bowler', batting: 5, bowling: 74 },
-            { name: 'Sam Harper', role: 'bowler', batting: 10, bowling: 68 },
-            { name: 'Tom Rogers', role: 'bowler', batting: 7, bowling: 71 }
+            { name: 'Usama Mir', role: 'bowler', batting: 5, bowling: 74 }
         ]
     },
 
     perth_scorchers: {
         name: 'Perth Scorchers',
         players: [
-            // Batsmen
-            { name: 'Aaron Hardie', role: 'batsman', batting: 78, bowling: 72, captain: true },
-            { name: 'Josh Inglis', role: 'wicketkeeper', batting: 79, bowling: 5 },
-            { name: 'Stephen Eskinazi', role: 'batsman', batting: 76, bowling: 10 },
-            { name: 'Cooper Connolly', role: 'batsman', batting: 74, bowling: 65 },
-            { name: 'Nick Hobson', role: 'batsman', batting: 72, bowling: 15 },
+            { name: 'Aaron Hardie', role: 'allrounder', batting: 78, bowling: 74, captain: true },
+            { name: 'Josh Inglis', role: 'wicketkeeper', batting: 80, bowling: 5 },
+            { name: 'Cooper Connolly', role: 'allrounder', batting: 75, bowling: 66 },
             { name: 'Sam Whiteman', role: 'wicketkeeper', batting: 73, bowling: 5 },
-            { name: 'Laurie Evans', role: 'batsman', batting: 75, bowling: 20 },
-
-            // All-rounders
-            { name: 'Ashton Agar', role: 'allrounder', batting: 70, bowling: 76 },
-            { name: 'Andrew Tye', role: 'allrounder', batting: 68, bowling: 75 },
-            { name: 'Jhye Richardson', role: 'allrounder', batting: 65, bowling: 77 },
-            { name: 'Jason Behrendorff', role: 'allrounder', batting: 62, bowling: 74 },
-            { name: 'Lance Morris', role: 'allrounder', batting: 60, bowling: 76 },
-
-            // Bowlers
-            { name: 'Zak Crawley', role: 'bowler', batting: 12, bowling: 70 },
-            { name: 'Hamish McKenzie', role: 'bowler', batting: 8, bowling: 72 },
-            { name: 'Charles Stobo', role: 'bowler', batting: 5, bowling: 69 },
+            { name: 'Nick Hobson', role: 'batsman', batting: 72, bowling: 15 },
+            { name: 'Ashton Agar', role: 'allrounder', batting: 70, bowling: 77 },
+            { name: 'Andrew Tye', role: 'allrounder', batting: 62, bowling: 75 },
+            { name: 'Jhye Richardson', role: 'allrounder', batting: 60, bowling: 78 },
+            { name: 'Jason Behrendorff', role: 'allrounder', batting: 55, bowling: 76 },
+            { name: 'Lance Morris', role: 'bowler', batting: 10, bowling: 77 },
+            { name: 'Matthew Kelly', role: 'bowler', batting: 7, bowling: 74 },
+            { name: 'Ben Manenti', role: 'bowler', batting: 6, bowling: 71 },
+            { name: 'Stephen Eskinazi', role: 'batsman', batting: 76, bowling: 10 },
             { name: 'James Bazley', role: 'bowler', batting: 10, bowling: 73 },
-            { name: 'Ben Manenti', role: 'bowler', batting: 6, bowling: 70 },
-            { name: 'Thomas Kelly', role: 'bowler', batting: 7, bowling: 68 }
+            { name: 'Charles Stobo', role: 'bowler', batting: 5, bowling: 70 }
         ]
     },
 
     sydney_sixers: {
         name: 'Sydney Sixers',
         players: [
-            // Batsmen
-            { name: 'Moises Henriques', role: 'batsman', batting: 76, bowling: 68, captain: true },
-            { name: 'Josh Philippe', role: 'wicketkeeper', batting: 78, bowling: 5 },
-            { name: 'James Vince', role: 'batsman', batting: 77, bowling: 15 },
+            { name: 'Josh Philippe', role: 'wicketkeeper', batting: 80, bowling: 5, captain: true },
+            { name: 'Steven Smith', role: 'batsman', batting: 85, bowling: 30 },
+            { name: 'James Vince', role: 'batsman', batting: 78, bowling: 15 },
             { name: 'Jordan Silk', role: 'batsman', batting: 74, bowling: 20 },
             { name: 'Kurtis Patterson', role: 'batsman', batting: 72, bowling: 10 },
-            { name: 'Daniel Hughes', role: 'batsman', batting: 73, bowling: 15 },
-            { name: 'Ryan Hackney', role: 'batsman', batting: 70, bowling: 10 },
-
-            // All-rounders
-            { name: 'Sean Abbott', role: 'allrounder', batting: 70, bowling: 76 },
+            { name: 'Lachlan Shaw', role: 'batsman', batting: 70, bowling: 10 },
+            { name: 'Moises Henriques', role: 'allrounder', batting: 74, bowling: 68 },
+            { name: 'Sean Abbott', role: 'allrounder', batting: 70, bowling: 77 },
             { name: 'Ben Dwarshuis', role: 'allrounder', batting: 68, bowling: 75 },
-            { name: 'Hayden Kerr', role: 'allrounder', batting: 72, bowling: 74 },
-            { name: 'Jackson Bird', role: 'allrounder', batting: 65, bowling: 73 },
-            { name: 'Todd Murphy', role: 'allrounder', batting: 60, bowling: 75 },
-
-            // Bowlers
-            { name: 'Steve O\'Keefe', role: 'bowler', batting: 10, bowling: 76 },
-            { name: 'Mickey Edwards', role: 'bowler', batting: 8, bowling: 74 },
-            { name: 'Izharulhaq Naveed', role: 'bowler', batting: 5, bowling: 72 },
-            { name: 'Jack Edwards', role: 'bowler', batting: 12, bowling: 70 },
-            { name: 'Blake Nikitaras', role: 'bowler', batting: 6, bowling: 68 },
-            { name: 'Lachlan Shaw', role: 'bowler', batting: 7, bowling: 69 }
+            { name: 'Todd Murphy', role: 'allrounder', batting: 60, bowling: 76 },
+            { name: 'Jackson Bird', role: 'bowler', batting: 12, bowling: 75 },
+            { name: 'Joel Davies', role: 'bowler', batting: 8, bowling: 73 },
+            { name: 'Ben Manenti', role: 'bowler', batting: 7, bowling: 72 },
+            { name: 'Mitchell Perry', role: 'bowler', batting: 6, bowling: 70 },
+            { name: 'Jack Edwards', role: 'bowler', batting: 10, bowling: 71 }
         ]
     },
 
     melbourne_renegades: {
         name: 'Melbourne Renegades',
         players: [
-            // Batsmen
-            { name: 'Nic Maddinson', role: 'batsman', batting: 76, bowling: 20, captain: true },
-            { name: 'Jake Fraser-McGurk', role: 'batsman', batting: 75, bowling: 15 },
-            { name: 'Quinton de Kock', role: 'wicketkeeper', batting: 80, bowling: 5 },
-            { name: 'Shaun Marsh', role: 'batsman', batting: 77, bowling: 10 },
-            { name: 'Aaron Finch', role: 'batsman', batting: 78, bowling: 15 },
-            { name: 'Mackenzie Harvey', role: 'batsman', batting: 71, bowling: 10 },
-            { name: 'Sam Harper', role: 'wicketkeeper', batting: 72, bowling: 5 },
-
-            // All-rounders
-            { name: 'Will Sutherland', role: 'allrounder', batting: 70, bowling: 74 },
-            { name: 'Tom Rogers', role: 'allrounder', batting: 68, bowling: 73 },
-            { name: 'Kane Richardson', role: 'allrounder', batting: 65, bowling: 75 },
-            { name: 'Adam Zampa', role: 'allrounder', batting: 62, bowling: 77 },
-            { name: 'Mujeeb Ur Rahman', role: 'allrounder', batting: 58, bowling: 76 },
-
-            // Bowlers
-            { name: 'Peter Siddle', role: 'bowler', batting: 12, bowling: 75 },
-            { name: 'Nathan Lyon', role: 'bowler', batting: 8, bowling: 76 },
-            { name: 'Fergus O\'Neill', role: 'bowler', batting: 5, bowling: 72 },
-            { name: 'Ruwantha Kellapotha', role: 'bowler', batting: 10, bowling: 70 },
-            { name: 'Harry Dixon', role: 'bowler', batting: 6, bowling: 68 },
-            { name: 'Jono Merlo', role: 'bowler', batting: 7, bowling: 69 }
+            { name: 'Jake Fraser-McGurk', role: 'batsman', batting: 78, bowling: 15, captain: true },
+            { name: 'Mackenzie Harvey', role: 'batsman', batting: 73, bowling: 10 },
+            { name: 'Sam Harper', role: 'wicketkeeper', batting: 74, bowling: 5 },
+            { name: 'Tim Seifert', role: 'wicketkeeper', batting: 74, bowling: 5 },
+            { name: 'Jonathan Wells', role: 'batsman', batting: 72, bowling: 10 },
+            { name: 'Will Sutherland', role: 'allrounder', batting: 70, bowling: 75 },
+            { name: 'Tom Rogers', role: 'allrounder', batting: 65, bowling: 73 },
+            { name: 'Kane Richardson', role: 'allrounder', batting: 60, bowling: 76 },
+            { name: 'Adam Zampa', role: 'allrounder', batting: 62, bowling: 78 },
+            { name: 'Spencer Johnson', role: 'bowler', batting: 8, bowling: 77 },
+            { name: 'Nathan Lyon', role: 'bowler', batting: 8, bowling: 77 },
+            { name: 'Fergus O\'Neill', role: 'bowler', batting: 5, bowling: 73 },
+            { name: 'Brendan Doggett', role: 'bowler', batting: 8, bowling: 73 },
+            { name: 'Peter Siddle', role: 'bowler', batting: 10, bowling: 74 },
+            { name: 'Andrew Tye', role: 'allrounder', batting: 60, bowling: 74 }
         ]
     },
 
     adelaide_strikers: {
         name: 'Adelaide Strikers',
         players: [
-            // Batsmen
-            { name: 'Matthew Short', role: 'batsman', batting: 78, bowling: 70, captain: true },
+            { name: 'Matthew Short', role: 'allrounder', batting: 78, bowling: 72, captain: true },
+            { name: 'Alex Carey', role: 'wicketkeeper', batting: 79, bowling: 5 },
             { name: 'Jake Weatherald', role: 'batsman', batting: 75, bowling: 15 },
-            { name: 'Alex Carey', role: 'wicketkeeper', batting: 77, bowling: 5 },
-            { name: 'Chris Lynn', role: 'batsman', batting: 79, bowling: 20 },
-            { name: 'Adam Hose', role: 'batsman', batting: 73, bowling: 10 },
-            { name: 'Ryan Gibson', role: 'batsman', batting: 71, bowling: 15 },
             { name: 'Harry Nielsen', role: 'wicketkeeper', batting: 72, bowling: 5 },
-
-            // All-rounders
-            { name: 'Rashid Khan', role: 'allrounder', batting: 65, bowling: 82 },
-            { name: 'Cameron Boyce', role: 'allrounder', batting: 68, bowling: 74 },
-            { name: 'Wes Agar', role: 'allrounder', batting: 62, bowling: 73 },
-            { name: 'Henry Thornton', role: 'allrounder', batting: 60, bowling: 75 },
-            { name: 'Brendan Doggett', role: 'allrounder', batting: 58, bowling: 72 },
-
-            // Bowlers
-            { name: 'Peter Siddle', role: 'bowler', batting: 10, bowling: 76 },
-            { name: 'David Payne', role: 'bowler', batting: 8, bowling: 74 },
-            { name: 'Lloyd Pope', role: 'bowler', batting: 5, bowling: 73 },
-            { name: 'James Bazley', role: 'bowler', batting: 12, bowling: 71 },
-            { name: 'Ben Manenti', role: 'bowler', batting: 6, bowling: 70 },
-            { name: 'Thomas Kelly', role: 'bowler', batting: 7, bowling: 68 }
+            { name: 'Alex Ross', role: 'batsman', batting: 72, bowling: 10 },
+            { name: 'Thomas Kelly', role: 'batsman', batting: 70, bowling: 10 },
+            { name: 'Chris Lynn', role: 'batsman', batting: 79, bowling: 20 },
+            { name: 'Jamie Overton', role: 'allrounder', batting: 65, bowling: 74 },
+            { name: 'Cameron Boyce', role: 'allrounder', batting: 65, bowling: 75 },
+            { name: 'Henry Thornton', role: 'allrounder', batting: 60, bowling: 76 },
+            { name: 'Hasan Ali', role: 'bowler', batting: 15, bowling: 78 },
+            { name: 'Lloyd Pope', role: 'bowler', batting: 5, bowling: 74 },
+            { name: 'Tabraiz Shamsi', role: 'bowler', batting: 8, bowling: 79 },
+            { name: 'Luke Wood', role: 'bowler', batting: 12, bowling: 75 },
+            { name: 'Jordan Buckingham', role: 'bowler', batting: 6, bowling: 72 }
         ]
     },
 
     hobart_hurricanes: {
         name: 'Hobart Hurricanes',
         players: [
-            // Batsmen
             { name: 'Matthew Wade', role: 'wicketkeeper', batting: 76, bowling: 5, captain: true },
-            { name: 'D\'Arcy Short', role: 'batsman', batting: 77, bowling: 65 },
-            { name: 'Ben McDermott', role: 'wicketkeeper', batting: 75, bowling: 5 },
+            { name: 'Ben McDermott', role: 'wicketkeeper', batting: 76, bowling: 5 },
             { name: 'Caleb Jewell', role: 'batsman', batting: 73, bowling: 10 },
+            { name: 'Jake Weatherald', role: 'batsman', batting: 74, bowling: 15 },
             { name: 'Macalister Wright', role: 'batsman', batting: 71, bowling: 15 },
-            { name: 'Tim David', role: 'batsman', batting: 78, bowling: 20 },
-            { name: 'Corey Anderson', role: 'batsman', batting: 74, bowling: 68 },
-
-            // All-rounders
-            { name: 'Nathan Ellis', role: 'allrounder', batting: 68, bowling: 76 },
-            { name: 'Riley Meredith', role: 'allrounder', batting: 65, bowling: 77 },
-            { name: 'Patrick Dooley', role: 'allrounder', batting: 62, bowling: 74 },
-            { name: 'Chris Jordan', role: 'allrounder', batting: 70, bowling: 75 },
-            { name: 'Billy Stanlake', role: 'allrounder', batting: 58, bowling: 73 },
-
-            // Bowlers
-            { name: 'Peter Hatzoglou', role: 'bowler', batting: 8, bowling: 74 },
-            { name: 'Iain Carlisle', role: 'bowler', batting: 5, bowling: 72 },
-            { name: 'Mitchell Owen', role: 'bowler', batting: 10, bowling: 70 },
-            { name: 'Nikhil Chaudhary', role: 'bowler', batting: 6, bowling: 69 },
-            { name: 'Sam Heazlett', role: 'bowler', batting: 12, bowling: 68 },
-            { name: 'Jarrod Freeman', role: 'bowler', batting: 7, bowling: 71 }
+            { name: 'Sam Hain', role: 'batsman', batting: 75, bowling: 10 },
+            { name: 'Mitchell Owen', role: 'allrounder', batting: 74, bowling: 70 },
+            { name: 'Corey Anderson', role: 'allrounder', batting: 72, bowling: 68 },
+            { name: 'Nikhil Chaudhary', role: 'allrounder', batting: 65, bowling: 72 },
+            { name: 'Rehan Ahmed', role: 'allrounder', batting: 62, bowling: 76 },
+            { name: 'Chris Jordan', role: 'allrounder', batting: 68, bowling: 76 },
+            { name: 'Nathan Ellis', role: 'bowler', batting: 10, bowling: 76 },
+            { name: 'Riley Meredith', role: 'bowler', batting: 6, bowling: 77 },
+            { name: 'Iain Carlisle', role: 'bowler', batting: 5, bowling: 73 },
+            { name: 'Billy Stanlake', role: 'bowler', batting: 8, bowling: 73 }
         ]
     },
     // Caribbean Premier League (CPL) Teams 2025 - expanded squads (18 players each)
@@ -1663,7 +1492,6 @@ const teams = {
             // Batsmen
             { name: 'Alex Hales', role: 'batsman', batting: 78, bowling: 15, captain: true },
             { name: 'Dawid Malan', role: 'batsman', batting: 79, bowling: 10 },
-            { name: 'Joe Root', role: 'batsman', batting: 83, bowling: 65 },
             { name: 'Tom Kohler-Cadmore', role: 'wicketkeeper', batting: 74, bowling: 5 },
             { name: 'Colin Munro', role: 'batsman', batting: 77, bowling: 20 },
             { name: 'Sam Hain', role: 'batsman', batting: 73, bowling: 15 },
@@ -1900,7 +1728,6 @@ const teams = {
             { name: 'Tom Curran', role: 'allrounder', batting: 71, bowling: 72 },
             { name: 'Adil Rashid', role: 'allrounder', batting: 65, bowling: 83 },
             { name: 'Akeal Hosein', role: 'allrounder', batting: 68, bowling: 79 },
-            { name: 'Mohammad Amir', role: 'allrounder', batting: 16, bowling: 85 },
             { name: 'Fawad Ahmed', role: 'allrounder', batting: 62, bowling: 72 },
             { name: 'Brett Hampton', role: 'allrounder', batting: 64, bowling: 68 },
             // Bowlers
@@ -2945,21 +2772,111 @@ function addCommentary(innings, over, ball, batsman, bowler, outcome, runs) {
     let commentaryText = "";
     let isExtra = outcome === 'wide' || outcome === 'noball';
     let overStr = `${over}.${ball + (isExtra ? 0 : 1)}`;
+    const outLines = [
+        `<b>OUT!</b> ${batsman.name} is dismissed!`,
+        `<b>WICKET!</b> ${bowler.name} strikes, ${batsman.name} has to walk back.`,
+        `<b>GONE!</b> Fantastic delivery from ${bowler.name}, ${batsman.name} is out.`,
+        `<b>OUT!</b> What a breakthrough! ${batsman.name} departs.`,
+        `<b>WICKET!</b> Plumb in front or edged? Either way, ${batsman.name} is gone.`,
+        `<b>WICKET!</b> Taken in the deep. ${batsman.name} departs.`,
+        `<b>OUT!</b> The pressure was building and ${batsman.name} perishes.`
+    ];
+    const wideLines = [
+        `Wide ball from ${bowler.name}.`,
+        `Way down the leg side, the umpire signals wide.`,
+        `Too wide outside off stump from ${bowler.name}.`,
+        `Extra run added, ${bowler.name} loses their line.`,
+        `Wide called. The bowler needs to tighten up.`,
+        `Poor line from ${bowler.name}, that's a wide.`
+    ];
+    const noballLines = [
+        `No ball! Extra run.`,
+        `Overstepping by ${bowler.name}, it's a no ball!`,
+        `High full toss, umpire calls a no ball.`,
+        `No ball signaled! Free hit coming up.`,
+        `Foot over the line, costly error from ${bowler.name}.`,
+        `No ball! ${batsman.name} survives and gets an extra run.`
+    ];
+    const fourLines = [
+        `<b>FOUR!</b> Beautiful shot by ${batsman.name}.`,
+        `<b>FOUR!</b> Pierces the gap perfectly, ${batsman.name} gets a boundary.`,
+        `<b>FOUR!</b> Cracking cover drive from ${batsman.name} for four runs!`,
+        `<b>FOUR!</b> Smashed away by ${batsman.name}, one bounce over the ropes.`,
+        `<b>FOUR!</b> Up and over the infield, exquisite timing by ${batsman.name}.`,
+        `<b>FOUR!</b> Poor delivery by ${bowler.name} and punished by ${batsman.name}.`
+    ];
+    const sixLines = [
+        `<b>SIX!</b> Massive hit by ${batsman.name}!`,
+        `<b>SIX!</b> That's huge! ${batsman.name} deposits it into the stands.`,
+        `<b>SIX!</b> Clean strike! ${batsman.name} hits it right out of the screws.`,
+        `<b>SIX!</b> ${bowler.name} is dispatched into the crowd by ${batsman.name}.`,
+        `<b>SIX!</b> Stand and deliver! Brilliant maximum from ${batsman.name}.`,
+        `<b>SIX!</b> Into the stands by ${batsman.name}!`,
+        `<b>SIX!</b> Sails over the boundary ropes, ${batsman.name} is on fire!`
+    ];
+    const dotLines = [
+        `No run. Solid defense by ${batsman.name}.`,
+        `Dot ball. Good tight bowling from ${bowler.name}.`,
+        `Beaten! Lovely delivery by ${bowler.name}, ${batsman.name} misses it.`,
+        `Pushed straight to the fielder by ${batsman.name}, no run.`,
+        `Well bowled by ${bowler.name}, ${batsman.name} respects it.`,
+        `Plays and misses! ${batsman.name} struggles to connect.`
+    ];
+    const singleLines = [
+        `1 run to ${batsman.name}.`,
+        `Tapped softly for a quick single by ${batsman.name}.`,
+        `Pushed into the gap, they jog through for one.`,
+        `Good running between the wickets, a single taken.`,
+        `Just a single off ${bowler.name}'s bowling.`,
+        `Smart batting, ${batsman.name} rotates the strike.`
+    ];
+    const doubleLines = [
+        `2 runs to ${batsman.name}.`,
+        `Excellent running! They push hard and get two.`,
+        `Flicked away into the deep by ${batsman.name} for a couple.`,
+        `Good placement by ${batsman.name}, comes back for the second run.`,
+        `Two runs added to the total off ${bowler.name}.`,
+        `They scurry back for the second. Great fitness shown by ${batsman.name}.`
+    ];
+
     if (outcome === 'out') {
-        commentaryText = `<b>OUT!</b> ${batsman.name} is dismissed!`;
+        commentaryText = outLines[Math.floor(Math.random() * outLines.length)];
     } else if (outcome === 'wide') {
-        commentaryText = `Wide ball from ${bowler.name}.`;
+        commentaryText = wideLines[Math.floor(Math.random() * wideLines.length)];
     } else if (outcome === 'noball') {
-        commentaryText = `No ball! Extra run.`;
+        commentaryText = noballLines[Math.floor(Math.random() * noballLines.length)];
     } else if (runs === 4) {
-        commentaryText = `<b>FOUR!</b> Beautiful shot by ${batsman.name}.`;
+        commentaryText = fourLines[Math.floor(Math.random() * fourLines.length)];
     } else if (runs === 6) {
-        commentaryText = `<b>SIX!</b> Massive hit by ${batsman.name}!`;
+        commentaryText = sixLines[Math.floor(Math.random() * sixLines.length)];
     } else if (runs === 0) {
-        commentaryText = `No run. Solid defense by ${batsman.name}.`;
+        commentaryText = dotLines[Math.floor(Math.random() * dotLines.length)];
+    } else if (runs === 1) {
+        commentaryText = singleLines[Math.floor(Math.random() * singleLines.length)];
+    } else if (runs === 2) {
+        commentaryText = doubleLines[Math.floor(Math.random() * doubleLines.length)];
     } else {
         commentaryText = `${runs} run${runs > 1 ? 's' : ''} to ${batsman.name}.`;
     }
+
+    let milestoneText = "";
+    if (innings.batting) {
+        const batStats = innings.batting.find(b => b.name === batsman.name);
+        if (batStats && outcome !== 'out' && runs > 0) {
+            let previousScore = batStats.runs - runs;
+            if (previousScore < 50 && batStats.runs >= 50) {
+                milestoneText = ` <br><span style="color:#fbbf24; font-weight:bold; font-size: 1.1em; padding-top: 4px; display: inline-block;">🌟 FIFTY! Brilliant half-century by ${batsman.name} off ${batStats.balls} balls.</span>`;
+            } else if (previousScore < 100 && batStats.runs >= 100) {
+                milestoneText = ` <br><span style="color:#fbbf24; font-weight:bold; font-size: 1.1em; padding-top: 4px; display: inline-block;">💯 CENTURY! What an incredible 100 for ${batsman.name} off ${batStats.balls} balls!</span>`;
+            } else if (previousScore < 150 && batStats.runs >= 150) {
+                milestoneText = ` <br><span style="color:#fbbf24; font-weight:bold; font-size: 1.1em; padding-top: 4px; display: inline-block;">🔥 150 UP! Spectacular knock by ${batsman.name} off ${batStats.balls} balls.</span>`;
+            } else if (previousScore < 200 && batStats.runs >= 200) {
+                milestoneText = ` <br><span style="color:#fbbf24; font-weight:bold; font-size: 1.1em; padding-top: 4px; display: inline-block;">👑 DOUBLE CENTURY! A legendary 200 by ${batsman.name} off ${batStats.balls} balls!</span>`;
+            }
+        }
+    }
+
+    commentaryText += milestoneText;
 
     if (!innings.commentary) innings.commentary = [];
     innings.commentary.push({
@@ -3108,7 +3025,7 @@ function simulateMatch(showCommentary = false) {
     if (showCommentary) {
         let inningsList = [];
         let teamNames = [];
-        
+
         if (currentMatchType === 'test') {
             inningsList = [
                 matchResults.team1.innings[0],
@@ -3132,7 +3049,7 @@ function simulateMatch(showCommentary = false) {
                 secondBattingTeam.name
             ];
         }
-        
+
         startCommentaryPlayback(inningsList, { teamNames }, displayResults);
     } else {
         displayResults();
@@ -3149,39 +3066,39 @@ function startCommentaryPlayback(inningsList, matchContext, onComplete) {
         onComplete: onComplete,
         matchContext: matchContext
     };
-    
+
     document.querySelector('.match-setup').style.display = 'none';
     document.querySelector('.venue-setup').style.display = 'none';
     document.querySelector('.lineup-management').style.display = 'none';
     document.querySelector('.simulation-controls').style.display = 'none';
     document.getElementById('match-results').style.display = 'none';
-    
+
     const commPanel = document.getElementById('commentary-panel');
-    if(commPanel) {
+    if (commPanel) {
         commPanel.style.display = 'block';
         commPanel.scrollIntoView({ behavior: 'smooth' });
     }
-    
+
     document.getElementById('commentary-box').innerHTML = '';
     document.getElementById('commentary-score').innerHTML = 'Starting match...';
-    
+
     playNextBall();
 }
 
 function playNextBall() {
     if (commentaryState.interval) clearTimeout(commentaryState.interval);
-    
+
     const innings = commentaryState.inningsList[commentaryState.currentInningsIdx];
     if (!innings || !innings.commentary) {
         finishCommentary();
         return;
     }
-    
+
     if (commentaryState.currentBallIdx >= innings.commentary.length) {
         // End of innings
         commentaryState.currentInningsIdx++;
         commentaryState.currentBallIdx = 0;
-        
+
         if (commentaryState.currentInningsIdx >= commentaryState.inningsList.length) {
             finishCommentary();
             return;
@@ -3194,41 +3111,41 @@ function playNextBall() {
             return;
         }
     }
-    
+
     const ball = innings.commentary[commentaryState.currentBallIdx];
-    
+
     // Render ball
     const box = document.getElementById('commentary-box');
-    const bg = ball.isWicket ? '#fee2e2' : (ball.isBoundary ? '#e0e7ff' : '#f8fafc');
-    const border = ball.isWicket ? '#ef4444' : (ball.isBoundary ? '#6366f1' : '#e2e8f0');
-    
+    const bg = ball.isWicket ? '#450a0a' : (ball.isBoundary ? '#1e1b4b' : '#262626');
+    const border = ball.isWicket ? '#dc2626' : (ball.isBoundary ? '#6366f1' : '#404040');
+
     box.innerHTML += `
         <div style="background:${bg}; border-left:4px solid ${border}; padding:10px; border-radius:4px; display:flex; gap:15px;">
             <div style="font-weight:bold; min-width:45px;">${ball.overStr}</div>
             <div>${ball.text}</div>
         </div>
     `;
-    
+
     document.getElementById('commentary-score').innerHTML = `${commentaryState.matchContext.teamNames[commentaryState.currentInningsIdx]}: ${ball.score}`;
-    
+
     box.scrollTop = box.scrollHeight;
-    
+
     commentaryState.currentBallIdx++;
     commentaryState.interval = setTimeout(playNextBall, 600);
 }
 
 function skipToInningsEnd() {
     if (commentaryState.interval) clearTimeout(commentaryState.interval);
-    
+
     const innings = commentaryState.inningsList[commentaryState.currentInningsIdx];
     if (!innings || !innings.commentary) return;
-    
+
     // Quickly render all remaining balls in this innings
     const box = document.getElementById('commentary-box');
     while (commentaryState.currentBallIdx < innings.commentary.length) {
         const ball = innings.commentary[commentaryState.currentBallIdx];
-        const bg = ball.isWicket ? '#fee2e2' : (ball.isBoundary ? '#e0e7ff' : '#f8fafc');
-        const border = ball.isWicket ? '#ef4444' : (ball.isBoundary ? '#6366f1' : '#e2e8f0');
+        const bg = ball.isWicket ? '#450a0a' : (ball.isBoundary ? '#1e1b4b' : '#262626');
+        const border = ball.isWicket ? '#dc2626' : (ball.isBoundary ? '#6366f1' : '#404040');
         box.innerHTML += `
             <div style="background:${bg}; border-left:4px solid ${border}; padding:10px; border-radius:4px; display:flex; gap:15px;">
                 <div style="font-weight:bold; min-width:45px;">${ball.overStr}</div>
@@ -3239,7 +3156,7 @@ function skipToInningsEnd() {
         commentaryState.currentBallIdx++;
     }
     box.scrollTop = box.scrollHeight;
-    
+
     playNextBall();
 }
 
@@ -3317,35 +3234,55 @@ function simulateInnings(battingTeam, bowlingTeam, config, inningsNum, target = 
             maidens: 0,
             runs: 0,
             wickets: 0,
-            economy: 0
+            economy: 0,
+            currentSpellOvers: 0,
+            spellLimit: 0
         };
     });
+
+    function getSpellLimit(matchType) {
+        if (matchType === 't20') return Math.floor(Math.random() * 2) + 2; // 2 to 3
+        if (matchType === 'odi') return Math.floor(Math.random() * 3) + 4; // 4 to 6
+        return Math.floor(Math.random() * 4) + 4; // 4 to 7
+    }
+
+    let activeBowlers = [0, Math.min(1, bowlingLineup.length - 1)]; // bowlers for two ends
+    bowlerStats[bowlingLineup[activeBowlers[0]].name].spellLimit = getSpellLimit(currentMatchType);
+    bowlerStats[bowlingLineup[activeBowlers[1]].name].spellLimit = getSpellLimit(currentMatchType);
+
     let currentBatsman1 = 0;
     let currentBatsman2 = 1;
-    let currentBowler = 0;
-    let ballsInOver = 0;
     let overRuns = 0;
     for (let over = 0; over < config.overs && innings.wickets < config.maxWickets; over++) {
         overRuns = 0;
-        // Enforce T20/ODI over cap per bowler
-        if (currentMatchType === 't20' || currentMatchType === 'odi') {
-            let maxBalls = currentMatchType === 't20' ? 24 : 60;
+        let endIdx = over % 2;
+        let otherEndIdx = (over + 1) % 2;
+        let currentBowler = activeBowlers[endIdx];
+
+        let maxBalls = currentMatchType === 't20' ? 24 : (currentMatchType === 'odi' ? 60 : 9999);
+        let bStats = bowlerStats[bowlingLineup[currentBowler].name];
+
+        // Change bowler if max balls reached or spell limit reached
+        if (bStats.balls >= maxBalls || bStats.currentSpellOvers >= bStats.spellLimit) {
+            let otherBowler = activeBowlers[otherEndIdx];
             let attempts = 0;
-            while (bowlerStats[bowlingLineup[currentBowler].name].balls >= maxBalls && attempts < bowlingLineup.length) {
-                currentBowler = (currentBowler + 1) % bowlingLineup.length;
+            let nextBowler = (currentBowler + 1) % bowlingLineup.length;
+            while (attempts < bowlingLineup.length) {
+                if (nextBowler !== otherBowler && bowlerStats[bowlingLineup[nextBowler].name].balls < maxBalls) {
+                    break;
+                }
+                nextBowler = (nextBowler + 1) % bowlingLineup.length;
                 attempts++;
             }
+            currentBowler = nextBowler;
+            activeBowlers[endIdx] = currentBowler;
+
+            let newStats = bowlerStats[bowlingLineup[currentBowler].name];
+            newStats.currentSpellOvers = 0;
+            newStats.spellLimit = getSpellLimit(currentMatchType);
         }
+
         for (let ball = 0; ball < 6 && innings.wickets < config.maxWickets; ball++) {
-            // For T20/ODI, check before every ball
-            if (currentMatchType === 't20' || currentMatchType === 'odi') {
-                let maxBalls = currentMatchType === 't20' ? 24 : 60;
-                let attempts = 0;
-                while (bowlerStats[bowlingLineup[currentBowler].name].balls >= maxBalls && attempts < bowlingLineup.length) {
-                    currentBowler = (currentBowler + 1) % bowlingLineup.length;
-                    attempts++;
-                }
-            }
             const batsman = battingLineup[currentBatsman1];
             const bowler = bowlingLineup[currentBowler];
             let outcome = calculateBallOutcome(batsman, bowler);
@@ -3409,10 +3346,7 @@ function simulateInnings(battingTeam, bowlingTeam, config, inningsNum, target = 
         if (overRuns === 0) {
             bowlerStats[bowlingLineup[currentBowler].name].maidens++;
         }
-        // Change bowler every N overs
-        if ((currentMatchType === 'odi' && (over + 1) % 5 === 0) || (currentMatchType !== 'odi' && (over + 1) % 4 === 0)) {
-            currentBowler = (currentBowler + 1) % bowlingLineup.length;
-        }
+        bowlerStats[bowlingLineup[currentBowler].name].currentSpellOvers++;
         innings.overs = over + 1;
         // In tournament mode, only stop if target is crossed (not just reached)
         if (target && innings.total > target) break;
@@ -3566,7 +3500,7 @@ function calculateBallOutcome(batsman, bowler) {
     // Format-based scoring rates (reduced by 8%)
     let outProb, boundaryProb, dotProb, run1Prob, run2Prob, run3Prob;
     if (currentMatchType === 'test') {
-        outProb = 0.844 * Math.max(0.02, Math.min(0.11, (bowlingSkill - battingSkill + 30) / 320));
+        outProb = 0.844 * Math.max(0.02, Math.min(0.15, (bowlingSkill - battingSkill + 30) / 320));
         outProb *= 0.7; // Reduce wicket probability by 30%
         boundaryProb = 0.92 * Math.max(0.03, (battingSkill - 60) / 180);
         dotProb = 0.92 * Math.max(0.25, (bowlingSkill - battingSkill + 40) / 90);
@@ -3574,7 +3508,7 @@ function calculateBallOutcome(batsman, bowler) {
         run2Prob = 0.92 * 0.20;
         run3Prob = 0.92 * 0.10;
     } else if (currentMatchType === 'odi') {
-        outProb = Math.max(0.015, Math.min(0.10, (bowlingSkill - battingSkill + 30) / 340));
+        outProb = Math.max(0.015, Math.min(0.15, (bowlingSkill - battingSkill + 30) / 340));
         outProb *= 0.7764678; // Reduce wicket probability by 22.3532%
         boundaryProb = 0.92 * Math.max(0.045, (battingSkill - 55) / 140);
         dotProb = 0.92 * Math.max(0.18, (bowlingSkill - battingSkill + 30) / 100);
@@ -3582,13 +3516,25 @@ function calculateBallOutcome(batsman, bowler) {
         run2Prob = 0.92 * 0.25;
         run3Prob = 0.92 * 0.17;
     } else {
-        outProb = Math.max(0.012, Math.min(0.09, (bowlingSkill - battingSkill + 30) / 370));
+        outProb = Math.max(0.012, Math.min(0.15, (bowlingSkill - battingSkill + 30) / 370));
         boundaryProb = 0.92 * Math.max(0.06, (battingSkill - 50) / 100);
         dotProb = 0.92 * Math.max(0.13, (bowlingSkill - battingSkill + 20) / 110);
         run1Prob = 0.92 * 0.45;
         run2Prob = 0.92 * 0.25;
         run3Prob = 0.92 * 0.20;
     }
+
+    // Adjust outProb based on batsman skill (Make tail-enders easier to dismiss and top-order harder)
+    if (battingSkill >= 85) {
+        outProb *= 0.65; // Elite top order
+    } else if (battingSkill >= 75) {
+        outProb *= 0.8; // Good top order
+    } else if (battingSkill < 55) {
+        outProb *= 2.5; // Pure bowlers / tail-enders
+    } else if (battingSkill < 65) {
+        outProb *= 1.6; // Lower order
+    }
+
     // Apply bowling variations to modify wicket probability
     outProb = applyBowlingVariation(bowler, batsman, outProb);
 
@@ -3605,6 +3551,75 @@ function calculateBallOutcome(batsman, bowler) {
     if (rand2 < run1Prob + run2Prob + run3Prob) return '3';
     if (rand2 < run1Prob + run2Prob + run3Prob + 0.05) return 'wide';
     return 'noball';
+}
+
+// Generate an AI-style post-match narrative from innings data
+function generateMatchNarrative(matchData) {
+    const { firstBatName, secondBatName, firstInnings, secondInnings, winner } = matchData;
+    const format = matchData.format || currentMatchType || 't20';
+
+    // Find top scorer
+    const allBatting = [...(firstInnings.batting || []), ...(secondInnings.batting || [])];
+    const topScorer = allBatting.filter(p => p.runs > 0).sort((a, b) => b.runs - a.runs)[0];
+
+    // Find top wicket-taker
+    const allBowling = [...(firstInnings.bowling || []), ...(secondInnings.bowling || [])];
+    const topBowler = allBowling.filter(p => p.wickets > 0).sort((a, b) => b.wickets - a.wickets)[0];
+
+    // Find key partnership or collapse moment
+    const scoreDiff = Math.abs(firstInnings.total - secondInnings.total);
+    const chaserCollapse = secondInnings.wickets >= 8 && secondInnings.total < firstInnings.total;
+    const closeChase = secondInnings.total > 0 && scoreDiff < 15 && winner !== firstBatName;
+    const dominantWin = scoreDiff > 50;
+
+    // Sentence 1: Set the scene with the top scorer
+    let s1 = '';
+    if (topScorer) {
+        const team = firstInnings.batting.find(p => p.name === topScorer.name) ? firstBatName : secondBatName;
+        const adj = topScorer.runs >= 100 ? 'century' : topScorer.runs >= 50 ? 'half-century' : 'knock';
+        const sr = topScorer.balls > 0 ? ((topScorer.runs / topScorer.balls) * 100).toFixed(0) : 0;
+        const qualifiers = ['brilliant', 'gutsy', 'composed', 'explosive', 'magnificent', 'stellar'];
+        const q = qualifiers[Math.floor(Math.random() * qualifiers.length)];
+        s1 = `${topScorer.name} anchored ${team}'s innings with a ${q} ${adj} of ${topScorer.runs} off ${topScorer.balls} balls (SR: ${sr}).`;
+    } else {
+        s1 = `${firstBatName} set the tone with a total of ${firstInnings.total}/${firstInnings.wickets} in ${firstInnings.overs} overs.`;
+    }
+
+    // Sentence 2: Key bowling performance or turning point
+    let s2 = '';
+    if (topBowler) {
+        const bowlerTeam = secondInnings.bowling.find(p => p.name === topBowler.name) ? secondBatName : firstBatName;
+        const phrases = [
+            `${topBowler.name} was the pick of the bowlers for ${bowlerTeam}, finishing with ${topBowler.wickets}/${topBowler.runs}.`,
+            `${topBowler.name} turned the match on its head for ${bowlerTeam} with a devastating spell of ${topBowler.wickets}/${topBowler.runs}.`,
+            `It was ${topBowler.name}'s ${topBowler.wickets}-wicket haul for ${bowlerTeam} that proved decisive.`
+        ];
+        s2 = phrases[Math.floor(Math.random() * phrases.length)];
+    } else if (chaserCollapse) {
+        s2 = `${secondBatName}'s batting lineup crumbled under pressure, losing ${secondInnings.wickets} wickets in the chase.`;
+    } else {
+        s2 = `The ${format.toUpperCase()} clash saw both sides trade blows throughout, with ${secondBatName} posting ${secondInnings.total}/${secondInnings.wickets}.`;
+    }
+
+    // Sentence 3: Result context
+    let s3 = '';
+    if (winner === 'Draw' || winner === 'Tie') {
+        s3 = `In the end, neither side could separate themselves, as the match ended in a ${winner.toLowerCase()} — a result both camps will reflect on.`;
+    } else if (closeChase) {
+        s3 = `In a nail-biting finish, ${winner} edged home by just ${scoreDiff} run${scoreDiff !== 1 ? 's' : ''} in what was a truly memorable contest.`;
+    } else if (dominantWin) {
+        s3 = `${winner} ultimately proved too strong, claiming a commanding victory that underlined their quality.`;
+    } else {
+        const margins = [
+            `${winner} held their nerve to seal the win`,
+            `${winner} claimed the spoils`,
+            `${winner} emerged victorious`
+        ];
+        const m = margins[Math.floor(Math.random() * margins.length)];
+        s3 = `${m} in a contest that kept fans on the edge of their seats until the very end.`;
+    }
+
+    return `<div class="match-narrative"><p>${s1}</p><p>${s2}</p><p>${s3}</p></div>`;
 }
 
 // Display match results
@@ -3663,6 +3678,26 @@ function displayResults() {
     }
 
     summaryDiv.innerHTML = summaryHTML;
+
+    // Generate and inject AI match narrative
+    const firstInnings = currentMatchType === 'test'
+        ? matchResults.team1.innings[0]
+        : matchResults.team1.innings[0];
+    const secondInnings = currentMatchType === 'test'
+        ? matchResults.team2.innings[0]
+        : matchResults.team2.innings[0];
+
+    const narrativeData = {
+        firstBatName: matchResults.team1.name,
+        secondBatName: matchResults.team2.name,
+        firstInnings: firstInnings,
+        secondInnings: secondInnings,
+        winner: matchResults.winner,
+        format: currentMatchType
+    };
+    const narrativeHTML = generateMatchNarrative(narrativeData);
+    // Insert narrative between summary and scorecards
+    summaryDiv.innerHTML += narrativeHTML;
 
     // Create scorecards based on match type
     if (currentMatchType === 'test') {
@@ -4123,7 +4158,7 @@ function renderTournamentBracket() {
         renderIPLPlayoffBracket();
         return;
     }
-    
+
     // Check if this is Tri-Series format
     if (tournamentState.triSeriesFormat) {
         renderTriSeriesBracket();
@@ -4371,34 +4406,55 @@ function simulateTournamentInningsWithScorecard(battingTeam, bowlingTeam, config
             maidens: 0,
             runs: 0,
             wickets: 0,
-            economy: 0
+            economy: 0,
+            currentSpellOvers: 0,
+            spellLimit: 0
         };
     });
+
+    function getSpellLimit(matchType) {
+        if (matchType === 't20') return Math.floor(Math.random() * 2) + 2; // 2 to 3
+        if (matchType === 'odi') return Math.floor(Math.random() * 3) + 4; // 4 to 6
+        return Math.floor(Math.random() * 4) + 4; // 4 to 7
+    }
+
+    let activeBowlers = [0, Math.min(1, bowlingLineup.length - 1)]; // bowlers for two ends
+    bowlerStats[bowlingLineup[activeBowlers[0]].name].spellLimit = getSpellLimit(currentMatchType);
+    bowlerStats[bowlingLineup[activeBowlers[1]].name].spellLimit = getSpellLimit(currentMatchType);
+
     let currentBatsman1 = 0;
     let currentBatsman2 = 1;
-    let currentBowler = 0;
     let overRuns = 0;
     for (let over = 0; over < config.overs && innings.wickets < config.maxWickets; over++) {
         overRuns = 0;
-        // Enforce T20/ODI over cap per bowler
-        if (currentMatchType === 't20' || currentMatchType === 'odi') {
-            let maxBalls = currentMatchType === 't20' ? 24 : 60;
+        let endIdx = over % 2;
+        let otherEndIdx = (over + 1) % 2;
+        let currentBowler = activeBowlers[endIdx];
+
+        let maxBalls = currentMatchType === 't20' ? 24 : (currentMatchType === 'odi' ? 60 : 9999);
+        let bStats = bowlerStats[bowlingLineup[currentBowler].name];
+
+        // Change bowler if max balls reached or spell limit reached
+        if (bStats.balls >= maxBalls || bStats.currentSpellOvers >= bStats.spellLimit) {
+            let otherBowler = activeBowlers[otherEndIdx];
             let attempts = 0;
-            while (bowlerStats[bowlingLineup[currentBowler].name].balls >= maxBalls && attempts < bowlingLineup.length) {
-                currentBowler = (currentBowler + 1) % bowlingLineup.length;
+            let nextBowler = (currentBowler + 1) % bowlingLineup.length;
+            while (attempts < bowlingLineup.length) {
+                if (nextBowler !== otherBowler && bowlerStats[bowlingLineup[nextBowler].name].balls < maxBalls) {
+                    break;
+                }
+                nextBowler = (nextBowler + 1) % bowlingLineup.length;
                 attempts++;
             }
+            currentBowler = nextBowler;
+            activeBowlers[endIdx] = currentBowler;
+
+            let newStats = bowlerStats[bowlingLineup[currentBowler].name];
+            newStats.currentSpellOvers = 0;
+            newStats.spellLimit = getSpellLimit(currentMatchType);
         }
+
         for (let ball = 0; ball < 6 && innings.wickets < config.maxWickets; ball++) {
-            // For T20/ODI, check before every ball
-            if (currentMatchType === 't20' || currentMatchType === 'odi') {
-                let maxBalls = currentMatchType === 't20' ? 24 : 60;
-                let attempts = 0;
-                while (bowlerStats[bowlingLineup[currentBowler].name].balls >= maxBalls && attempts < bowlingLineup.length) {
-                    currentBowler = (currentBowler + 1) % bowlingLineup.length;
-                    attempts++;
-                }
-            }
             const batsman = battingLineup[currentBatsman1];
             const bowler = bowlingLineup[currentBowler];
             let outcome = calculateBallOutcome(batsman, bowler);
@@ -4462,10 +4518,7 @@ function simulateTournamentInningsWithScorecard(battingTeam, bowlingTeam, config
         if (overRuns === 0) {
             bowlerStats[bowlingLineup[currentBowler].name].maidens++;
         }
-        // Change bowler every N overs
-        if ((currentMatchType === 'odi' && (over + 1) % 5 === 0) || (currentMatchType !== 'odi' && (over + 1) % 4 === 0)) {
-            currentBowler = (currentBowler + 1) % bowlingLineup.length;
-        }
+        bowlerStats[bowlingLineup[currentBowler].name].currentSpellOvers++;
         innings.overs = over + 1;
         // In tournament mode, only stop if target is crossed (not just reached)
         if (target && innings.total > target) break;
@@ -4491,6 +4544,7 @@ function showTournamentScorecard(matchIdx) {
     let formatLabel = format.toUpperCase();
     let html = `<div class='scorecard-modal-bg' onclick='closeTournamentScorecard()'></div><div class='scorecard-modal'>`;
     html += `<h3 style='text-align:center;margin-bottom:10px;'>${match.firstBatName} vs ${match.secondBatName} - ${formatLabel}</h3>`;
+    html += generateMatchNarrative(match);
     html += `<div style='margin-bottom:8px;text-align:center;font-size:1.05rem;'>Toss: <b>${match.tossWinner}</b> chose to <b>${match.tossDecision === 'bat' ? 'bat first' : 'bowl first'}</b></div>`;
     html += `<div class='scorecard-section'><h4>${match.firstBatName} Batting</h4>` + renderScorecardTable(match.firstInnings.batting, true) + `</div>`;
     html += `<div class='scorecard-section'><h4>${match.secondBatName} Batting</h4>` + renderScorecardTable(match.secondInnings.batting, true) + `</div>`;
@@ -4874,7 +4928,7 @@ function renderTriSeriesBracket() {
     leagueStage.style.justifyContent = 'center';
 
     const pairs = [[0, 1], [1, 2], [2, 0]];
-    
+
     for (let i = 0; i < 3; i++) {
         const matchDiv = document.createElement('div');
         matchDiv.className = 'bracket-match';
@@ -4905,7 +4959,7 @@ function renderTriSeriesBracket() {
     finalStage.innerHTML = '<h3 style="margin-bottom: 10px;">Final</h3>';
     finalStage.style.display = 'flex';
     finalStage.style.justifyContent = 'center';
-    
+
     const finalDiv = document.createElement('div');
     finalDiv.className = 'bracket-match';
     finalDiv.innerHTML = `<div style='font-weight:bold;color:#e65100;margin-bottom:8px;'>Final</div>`;
@@ -4925,38 +4979,38 @@ function renderTriSeriesBracket() {
         if (tournamentState.results[0] && tournamentState.results[1] && tournamentState.results[2]) {
             // Calculate standings
             let points = { [teamKeys[0]]: 0, [teamKeys[1]]: 0, [teamKeys[2]]: 0 };
-            let nrrRuns = { 
-                [teamKeys[0]]: { scored: 0, oversFaced: 0, conceded: 0, oversBowled: 0 }, 
-                [teamKeys[1]]: { scored: 0, oversFaced: 0, conceded: 0, oversBowled: 0 }, 
-                [teamKeys[2]]: { scored: 0, oversFaced: 0, conceded: 0, oversBowled: 0 } 
+            let nrrRuns = {
+                [teamKeys[0]]: { scored: 0, oversFaced: 0, conceded: 0, oversBowled: 0 },
+                [teamKeys[1]]: { scored: 0, oversFaced: 0, conceded: 0, oversBowled: 0 },
+                [teamKeys[2]]: { scored: 0, oversFaced: 0, conceded: 0, oversBowled: 0 }
             };
-            
-            for(let i=0; i<3; i++) {
+
+            for (let i = 0; i < 3; i++) {
                 let d = tournamentState.matchData[i];
-                if(tournamentState.results[i] === d.firstBatName) points[d.firstBatKey] += 2;
-                else if(tournamentState.results[i] === d.secondBatName) points[d.secondBatKey] += 2;
+                if (tournamentState.results[i] === d.firstBatName) points[d.firstBatKey] += 2;
+                else if (tournamentState.results[i] === d.secondBatName) points[d.secondBatKey] += 2;
                 else { points[d.firstBatKey] += 1; points[d.secondBatKey] += 1; }
-                
+
                 nrrRuns[d.firstBatKey].scored += d.firstInnings.total;
                 nrrRuns[d.firstBatKey].oversFaced += parseFloat(d.firstInnings.overs);
                 nrrRuns[d.firstBatKey].conceded += d.secondInnings.total;
                 nrrRuns[d.firstBatKey].oversBowled += parseFloat(d.secondInnings.overs);
-                
+
                 nrrRuns[d.secondBatKey].scored += d.secondInnings.total;
                 nrrRuns[d.secondBatKey].oversFaced += parseFloat(d.secondInnings.overs);
                 nrrRuns[d.secondBatKey].conceded += d.firstInnings.total;
                 nrrRuns[d.secondBatKey].oversBowled += parseFloat(d.firstInnings.overs);
             }
-            
+
             let standings = teamKeys.map(k => {
                 let nrr = (nrrRuns[k].oversFaced > 0 && nrrRuns[k].oversBowled > 0) ? (nrrRuns[k].scored / nrrRuns[k].oversFaced) - (nrrRuns[k].conceded / nrrRuns[k].oversBowled) : 0;
                 return { key: k, pts: points[k], nrr: nrr };
             });
             standings.sort((a, b) => b.pts - a.pts || b.nrr - a.nrr);
-            
+
             let top1 = standings[0].key;
             let top2 = standings[1].key;
-            
+
             finalDiv.innerHTML += `<span>${teams[top1].name} vs ${teams[top2].name}</span><br><button class='simulate-btn' style='margin-top:8px;padding:6px 18px;font-size:0.98rem;' onclick='simulateTournamentMatch(3,"${top1}","${top2}")'>Simulate</button>`;
         } else {
             finalDiv.innerHTML += `<span>TBD vs TBD</span><br><button class='simulate-btn' style='margin-top:8px;padding:6px 18px;font-size:0.98rem;' disabled>Simulate</button>`;
@@ -5571,6 +5625,11 @@ function getLeagueTeamKeys(preset) {
 // League playoffs state for manual simulation
 let leaguePlayoffState = null;
 
+function resetLeagueTournament() {
+    document.getElementById('league-panel').querySelector('.tournament-setup').style.display = 'block';
+    document.getElementById('league-bracket-section').style.display = 'none';
+}
+
 function startLeagueTournament(preset) {
     const keys = getLeagueTeamKeys(preset);
     if (!keys || keys.length < 4) { alert('Invalid league preset'); return; }
@@ -5583,6 +5642,9 @@ function startLeagueTournament(preset) {
 
     bracketDiv.innerHTML = '';
     resultsDiv.innerHTML = '';
+
+    // Hide setup and show bracket
+    document.getElementById('league-panel').querySelector('.tournament-setup').style.display = 'none';
     section.style.display = 'block';
 
     // Initialize league table
@@ -5739,31 +5801,94 @@ function startLeagueTournament(preset) {
         preset
     };
 
+    // Generate Top Performers (Top 18 shuffler)
+    let allBatters = [];
+    let allBowlers = [];
+    keys.forEach(key => {
+        const team = teams[key];
+        team.players.forEach((player, pIdx) => {
+            // Bias towards openers and top-order batters
+            const orderBoost = pIdx < 3 ? 15 : (pIdx < 6 ? 5 : 0);
+            allBatters.push({
+                name: player.name,
+                team: team.name,
+                rating: player.batting + orderBoost,
+            });
+            if (player.role && (player.role.toLowerCase().includes('bowler') || player.role.toLowerCase().includes('allrounder'))) {
+                allBowlers.push({
+                    name: player.name,
+                    team: team.name,
+                    rating: player.bowling,
+                });
+            }
+        });
+    });
+
+    // Sort by rating and get top 18
+    allBatters.sort((a, b) => b.rating - a.rating);
+    allBowlers.sort((a, b) => b.rating - a.rating);
+
+    let top18Batters = allBatters.slice(0, 18);
+    let top18Bowlers = allBowlers.slice(0, 18);
+
+    // Add random variance for the final simulated stats
+    top18Batters.forEach(b => {
+        b.simRuns = Math.floor(b.rating * 4) + Math.floor(Math.random() * 250);
+    });
+    top18Bowlers.forEach(b => {
+        b.simWickets = Math.floor(b.rating / 6) + Math.floor(Math.random() * 10);
+    });
+
+    // Sort by simulated stats
+    top18Batters.sort((a, b) => b.simRuns - a.simRuns);
+    top18Bowlers.sort((a, b) => b.simWickets - a.simWickets);
+
+    const top5Batters = top18Batters.slice(0, 5);
+    const top5Bowlers = top18Bowlers.slice(0, 5);
+
+    const statsHTML = `
+        <div style="display:flex; flex-direction:column; gap:20px; min-width: 280px;">
+            <div class="bracket-match" style="text-align:left; padding: 15px;">
+                <div style='font-weight:bold;color:#e65100;margin-bottom:12px;text-align:center;border-bottom:1px solid #ffe0b2;padding-bottom:8px;'>Top Runs</div>
+                ${top5Batters.map((b, i) => `<div style="display:flex; justify-content:space-between; font-size:0.95rem; margin-bottom:8px; align-items:center;"><span><strong>${i + 1}.</strong> ${b.name} <br><span style="font-size:0.75rem;color:#666;">${b.team}</span></span> <span style="font-weight:bold; color:#4338ca; font-size:1.1rem;">${b.simRuns}</span></div>`).join('')}
+            </div>
+            <div class="bracket-match" style="text-align:left; padding: 15px;">
+                <div style='font-weight:bold;color:#e65100;margin-bottom:12px;text-align:center;border-bottom:1px solid #ffe0b2;padding-bottom:8px;'>Top Wickets</div>
+                ${top5Bowlers.map((b, i) => `<div style="display:flex; justify-content:space-between; font-size:0.95rem; margin-bottom:8px; align-items:center;"><span><strong>${i + 1}.</strong> ${b.name} <br><span style="font-size:0.75rem;color:#666;">${b.team}</span></span> <span style="font-weight:bold; color:#4338ca; font-size:1.1rem;">${b.simWickets}</span></div>`).join('')}
+            </div>
+        </div>
+    `;
+
     // Build UI: league table + playoffs bracket with simulate buttons
     const playoffsHTML = `
-        <div style="margin-top:16px;">
-            <h3 style="text-align:center;color:#e65100;margin-bottom:10px;">Playoffs</h3>
-            <div style="display:flex;gap:20px;justify-content:center;flex-wrap:wrap;">
-                <div class="bracket-match" id="league-q1">
-                    <div style='font-weight:bold;color:#e65100;margin-bottom:8px;'>Qualifier 1</div>
-                    <div>${teams[top4[0]].name} vs ${teams[top4[1]].name}</div>
-                    <button class="simulate-btn" style="margin-top:8px;padding:6px 18px;font-size:0.98rem;" onclick="simulateLeaguePlayoffMatch(0)">Simulate</button>
+        <div style="margin-top:24px;">
+            <h3 style="text-align:center;color:#e65100;margin-bottom:16px;">League Playoffs & Top Performers</h3>
+            <div style="display:flex;gap:30px;justify-content:center;flex-wrap:wrap;align-items:flex-start;">
+                <!-- Playoffs Column -->
+                <div style="display:flex;flex-wrap:wrap;gap:20px;max-width:500px;justify-content:center;">
+                    <div class="bracket-match" id="league-q1">
+                        <div style='font-weight:bold;color:#e65100;margin-bottom:8px;'>Qualifier 1</div>
+                        <div>${teams[top4[0]].name} vs ${teams[top4[1]].name}</div>
+                        <button class="simulate-btn" style="margin-top:8px;padding:6px 18px;font-size:0.98rem;" onclick="simulateLeaguePlayoffMatch(0)">Simulate</button>
+                    </div>
+                    <div class="bracket-match" id="league-elim">
+                        <div style='font-weight:bold;color:#e65100;margin-bottom:8px;'>Eliminator</div>
+                        <div>${teams[top4[2]].name} vs ${teams[top4[3]].name}</div>
+                        <button class="simulate-btn" style="margin-top:8px;padding:6px 18px;font-size:0.98rem;" onclick="simulateLeaguePlayoffMatch(1)">Simulate</button>
+                    </div>
+                    <div class="bracket-match" id="league-q2">
+                        <div style='font-weight:bold;color:#e65100;margin-bottom:8px;'>Qualifier 2</div>
+                        <div>TBD vs TBD</div>
+                        <button class="simulate-btn" style="margin-top:8px;padding:6px 18px;font-size:0.98rem;" onclick="simulateLeaguePlayoffMatch(2)" disabled>Simulate</button>
+                    </div>
+                    <div class="bracket-match" id="league-final">
+                        <div style='font-weight:bold;color:#e65100;margin-bottom:8px;'>Final</div>
+                        <div>TBD vs TBD</div>
+                        <button class="simulate-btn" style="margin-top:8px;padding:6px 18px;font-size:0.98rem;" onclick="simulateLeaguePlayoffMatch(3)" disabled>Simulate</button>
+                    </div>
                 </div>
-                <div class="bracket-match" id="league-elim">
-                    <div style='font-weight:bold;color:#e65100;margin-bottom:8px;'>Eliminator</div>
-                    <div>${teams[top4[2]].name} vs ${teams[top4[3]].name}</div>
-                    <button class="simulate-btn" style="margin-top:8px;padding:6px 18px;font-size:0.98rem;" onclick="simulateLeaguePlayoffMatch(1)">Simulate</button>
-                </div>
-                <div class="bracket-match" id="league-q2">
-                    <div style='font-weight:bold;color:#e65100;margin-bottom:8px;'>Qualifier 2</div>
-                    <div>TBD vs TBD</div>
-                    <button class="simulate-btn" style="margin-top:8px;padding:6px 18px;font-size:0.98rem;" onclick="simulateLeaguePlayoffMatch(2)" disabled>Simulate</button>
-                </div>
-                <div class="bracket-match" id="league-final">
-                    <div style='font-weight:bold;color:#e65100;margin-bottom:8px;'>Final</div>
-                    <div>TBD vs TBD</div>
-                    <button class="simulate-btn" style="margin-top:8px;padding:6px 18px;font-size:0.98rem;" onclick="simulateLeaguePlayoffMatch(3)" disabled>Simulate</button>
-                </div>
+                <!-- Stats Column -->
+                ${statsHTML}
             </div>
         </div>
     `;
@@ -5833,6 +5958,7 @@ function simulateLeaguePlayoffMatch(matchIdx) {
     const secondInnings = simulateTournamentInningsWithScorecard(secondBat, firstBat, config, firstInnings.total);
 
     let winner;
+    let superOverData = null;
     if (secondInnings.total > firstInnings.total) {
         winner = secondBat.name;
     } else if (firstInnings.total > secondInnings.total) {
@@ -5840,10 +5966,7 @@ function simulateLeaguePlayoffMatch(matchIdx) {
     } else {
         const so = simulateSuperOver(firstBat, secondBat);
         winner = so.winner;
-        matchData[matchIdx] = {
-            ...matchData[matchIdx],
-            superOver: so
-        };
+        superOverData = so;
     }
 
     // Store match data
@@ -5854,19 +5977,21 @@ function simulateLeaguePlayoffMatch(matchIdx) {
         tossWinner: tossWinner.name, tossDecision,
         firstInnings, secondInnings,
         winner,
-        format
+        format,
+        ...(superOverData ? { superOver: superOverData } : {})
     };
     results[matchIdx] = winner;
 
     // Update UI for this match
     const teamAScore = `${firstInnings.total}/${firstInnings.wickets} (${firstInnings.overs} ov)`;
     const teamBScore = `${secondInnings.total}/${secondInnings.wickets} (${secondInnings.overs} ov)`;
+    const matchLabel = container.id === 'league-q1' ? 'Qualifier 1' : container.id === 'league-elim' ? 'Eliminator' : container.id === 'league-q2' ? 'Qualifier 2' : 'Final';
     container.classList.add('bracket-winner');
     container.innerHTML = `
-        <div style='font-weight:bold;color:#fff;margin-bottom:8px;'>${container.id === 'league-q1' ? 'Qualifier 1' : container.id === 'league-elim' ? 'Eliminator' : container.id === 'league-q2' ? 'Qualifier 2' : 'Final'}</div>
+        <div style='font-weight:bold;color:#fff;margin-bottom:8px;'>${matchLabel}</div>
         <span>${firstBat.name} <span style='color:#fff;'>${teamAScore}</span> vs ${secondBat.name} <span style='color:#fff;'>${teamBScore}</span></span>
-        <br><strong>Winner: ${winner}</strong>
-        <br><button class='simulate-btn' style='margin-top:8px;padding:6px 18px;font-size:0.98rem;background:#667eea;' onclick='showTournamentScorecard(${matchIdx})'>View Scorecard</button>
+        <br><strong>Winner: ${winner}${superOverData ? ' (Super Over)' : ''}</strong>
+        <br><button class='simulate-btn' style='margin-top:8px;padding:6px 18px;font-size:0.98rem;background:#667eea;' onclick='showLeaguePlayoffScorecard(${matchIdx})'>View Scorecard</button>
     `;
 
     // Enable next matches as appropriate
@@ -5903,6 +6028,37 @@ function simulateLeaguePlayoffMatch(matchIdx) {
             </div>
         `;
     }
+}
+
+// Show scorecard modal for a league playoff match
+function showLeaguePlayoffScorecard(matchIdx) {
+    if (!leaguePlayoffState || !leaguePlayoffState.matchData[matchIdx]) {
+        alert('Scorecard not available yet for this match.');
+        return;
+    }
+    const match = leaguePlayoffState.matchData[matchIdx];
+    const matchLabel = ['Qualifier 1', 'Eliminator', 'Qualifier 2', 'Final'][matchIdx] || 'Playoff Match';
+    let html = `<div class='scorecard-modal-bg' onclick='closeTournamentScorecard()'></div><div class='scorecard-modal'>`;
+    html += `<h3 style='text-align:center;margin-bottom:10px;'>${matchLabel}: ${match.firstBatName} vs ${match.secondBatName}</h3>`;
+    html += generateMatchNarrative(match);
+    html += `<div style='margin-bottom:8px;text-align:center;font-size:1.05rem;'>Toss: <b>${match.tossWinner}</b> chose to <b>${match.tossDecision === 'bat' ? 'bat first' : 'bowl first'}</b></div>`;
+    html += `<div class='scorecard-section'><h4>${match.firstBatName} Batting</h4>` + renderScorecardTable(match.firstInnings.batting, true) + `</div>`;
+    html += `<div class='scorecard-section'><h4>${match.secondBatName} Batting</h4>` + renderScorecardTable(match.secondInnings.batting, true) + `</div>`;
+    html += `<div class='scorecard-section'><h4>${match.firstBatName} Bowling</h4>` + renderScorecardTable(match.firstInnings.bowling, false) + `</div>`;
+    html += `<div class='scorecard-section'><h4>${match.secondBatName} Bowling</h4>` + renderScorecardTable(match.secondInnings.bowling, false) + `</div>`;
+    if (match.superOver) {
+        html += `<div style='margin-top:20px;padding:15px;background:#fff3e0;border:2px solid #ff9800;border-radius:8px;'>`;
+        html += `<h4 style='color:#e65100;text-align:center;margin-bottom:10px;'>⚡ SUPER OVER ⚡</h4>`;
+        html += `<div class='scorecard-section'><h4>${match.superOver.firstBatName} Super Over Batting</h4>` + renderScorecardTable(match.superOver.firstInnings.batting, true) + `</div>`;
+        html += `<div class='scorecard-section'><h4>${match.superOver.secondBatName} Super Over Batting</h4>` + renderScorecardTable(match.superOver.secondInnings.batting, true) + `</div>`;
+        html += `<div style='text-align:center;font-weight:bold;color:#e65100;margin-top:8px;'>Super Over Winner: ${match.superOver.winner}</div></div>`;
+    }
+    html += `<div style='text-align:center;margin-top:12px;'><button class='reset-btn' style='padding:8px 24px;font-size:1rem;' onclick='closeTournamentScorecard()'>Close</button></div>`;
+    html += `</div>`;
+    let modal = document.createElement('div');
+    modal.id = 'scorecard-modal-container';
+    modal.innerHTML = html;
+    document.body.appendChild(modal);
 }
 
 // Updated panel switcher to include league tab
